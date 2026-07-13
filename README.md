@@ -60,6 +60,8 @@ El proyecto esta configurado para publicar el sitio estatico generado en `quarto
 
 El workflow `.github/workflows/pages.yml` publica automaticamente la carpeta `quarto/docs`.
 
+No uses la opcion `Deploy from a branch` con la carpeta `/docs`: esa opcion busca `docs/` en la raiz del repositorio, pero en este proyecto la salida estatica vive en `quarto/docs`.
+
 ## Notas
 
 - La salida PDF no esta configurada; esta version se enfoca solo en HTML.

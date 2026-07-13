@@ -5,8 +5,8 @@ project:
     - .nojekyll
 
 book:
-  title: "Estrategias de muestreo"
-  subtitle: "Diseño de encuestas y estimación de parámetros"
+  title: "Estrategias de Muestreo"
+  subtitle: "Diseño de Encuestas y Estimación de Parámetros"
   author: "Andrés Gutiérrez"
   date: today
   date-format: long
