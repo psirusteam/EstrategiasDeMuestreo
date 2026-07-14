@@ -980,3 +980,5 @@ $$
 Discuta si los anteriores mecanismos de muestreo son ignorables o no.
 
 1. Demuestre que el predictor general de regresión $\hat{T}_{Y, greg}=\hat{T}_{Y,\pi}+(\mathbf{T_X}-\mathbf{\hat{T}_{X,\pi}})'\hat{\boldsymbol{\beta}}$ es insesgado bajo el modelo $Y_k= \mathbf{X}'_k\boldsymbol{\beta}+\varepsilon_k$. Suponga que los errores tienen media cero y varianza constante.
+
+# Referencias {-}
