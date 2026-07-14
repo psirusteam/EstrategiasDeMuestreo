@@ -177,9 +177,9 @@ Como siempre, si el diseño de muestreo es de tamaño fijo, se pueden utilizar l
 Siendo $B=f(t_1, t_2,\ldots, t_Q)$ es una función de totales poblacionales, entonces un estimador aproximadamente insesgado de $B$, su varianza aproximada y una estimación insesgada para esta última están dadas por las siguientes expresiones
 $$
 \hat{B}_{\pi}=f(\hat{t}_{1,\pi}, \hat{t}_{2,\pi},\ldots,\hat{t}_{Q,\pi})
-$$$$
+\\
 AVar(\hat{B}_\pi)=\sum\sum_U\Delta_{kl}\frac{E_k}{\pi_k}\frac{E_l}{\pi_l}
-$$$$
+\\
 \widehat{Var}(\hat{B}_\pi)=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{e_k}{\pi_k}\frac{e_l}{\pi_l}
 $$
 respectivamente, con $\hat{t}_{q,\pi}$ el estimador de Horvitz-Thompson de $t_{q,\pi}$ y tanto $E_k$ como $e_k$ se encuentran dados por las fórmulas (@eq-Ek) y (@eq-ek), en estricto orden.
@@ -225,9 +225,9 @@ Para la estimación de razones se propone el siguiente resultado que da cuenta d
 Un estimador para la razón poblacional $B$ de dos características de interés, su varianza y su varianza estimada están dados por
 $$
 \hat{B}=\dfrac{\hat{t}_{y,\pi}}{\hat{t}_{z,\pi}}
-$$$$
+\\
 AVar(\hat{T}_{\pi})=\sum\sum_U\Delta_{kl}\frac{E_k}{\pi_k}\frac{E_l}{\pi_l}.
-$$$$
+\\
 \widehat{Var}(\hat{t}_{y,\pi})=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{e_k}{\pi_k}\frac{e_l}{\pi_l}
 $$
 donde $E_k=\dfrac{1}{t_x}(y_k-Bz_k)$ y $e_k=\dfrac{1}{\hat{t}_{z,\pi}}(y_k-\hat{B}z_k)$
@@ -315,9 +315,9 @@ Los principios del estimador de Horvitz-Thompson se establecen para llegar a una
 Bajo muestreo aleatorio simple, el estimador de la razón poblacional $B$, su varianza y su varianza estimada están dados por
 $$
 \hat{B}=\dfrac{\bar{y}_S}{\bar{z}_S}
-$$$$
+\\
 AVar_{MAS}(\hat{B})=\frac{N^2}{n}\left(1-\frac{n}{N}\right)S^2_{EU}
-$$$$
+\\
 \widehat{Var}_{MAS}(\hat{B})=\frac{N^2}{n}\left(1-\frac{n}{N}\right)S^2_{es}
 $$
 respectivamente, con $S^2_{EU}$ y $S^2_{es}$ el estimador de la varianza de los valores de la variable linealizada $E$ y su aproximación $e$ en el universo $U$ y en la muestra $s$. Recuerde que $E_k=\dfrac{1}{t_x}(y_k-Bz_k)$ y $e_k=\dfrac{1}{\hat{t}_{z,\pi}}(y_k-\hat{B}z_k)$.
@@ -331,10 +331,10 @@ respectivamente, con $S^2_{EU}$ y $S^2_{es}$ el estimador de la varianza de los 
 Bajo muestreo aleatorio simple, el estimador de la razón poblacional $B$, su varianza y su varianza estimada están dados por
 $$
 \hat{B}=\dfrac{\sum_{i\in S_I}N_i\bar{y}_{S_i}}{\sum_{i\in S_I}N_i\bar{z}_{S_i}}
-$$$$
+\\
 AVar_{MM}(\hat{B})=\frac{N_{I}^2}{n_{I}}\left(1-\frac{n_{I}}{N_{I}}\right)S^2_{t_{E}U_I}+
 \frac{N_{I}}{n_{I}}\sum_{i\in U_{I}}\frac{N_i^2}{n_i}\left(1-\frac{n_i}{N_i}\right)S^2_{y_{E_i}}
-$$$$
+\\
 \widehat{Var}_{MM}(\hat{B})=\frac{N_{I}^2}{n_{I}}\left(1-\frac{n_{I}}{N_{I}}\right)S^2_{\hat{t}_{e}S_I}+
 \frac{N_{I}}{n_{I}}\sum_{i\in S_{I}}\frac{N_i^2}{n_i}\left(1-\frac{n_i}{N_i}\right)S^2_{e_{S_i}}
 $$
@@ -377,9 +377,9 @@ Nótese que, para este caso particular, el estimador $\widetilde{y}_S$ es insesg
 Un estimador del promedio poblacional $\bar{y}_U$, definido como una razón, su varianza y su varianza estimada están dados por
 $$
 \widetilde{y}_S=\dfrac{\hat{t}_{y,\pi}}{\hat{N}_{\pi}}=\sum_S\dfrac{y_k}{\pi_k}\bigg/\sum_S\dfrac{1}{\pi_k}.
-$$$$
+\\
 AVar(\widetilde{y}_S)=\frac{1}{N^2}\sum\sum_U\Delta_{kl}\left(\frac{y_k-\bar{y}_U}{\pi_k}\right)\left(\frac{y_l-\bar{y}_U}{\pi_l}\right)
-$$$$
+\\
 \widehat{Var}(\widetilde{y}_S)=\frac{1}{\hat{N}^2}\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\left(\frac{y_k-\widetilde{y}_S}{\pi_k}\right)\left(\frac{y_l-\widetilde{y}_S}{\pi_l}\right)
 $$
 respectivamente.
@@ -395,9 +395,9 @@ Este estimador coincide con el estimador clásico $\bar{y}_S$ en diseños de mue
 Bajo cualquier diseño de muestreo, el estimador de Horvitz-Thompson para el tamaño absoluto de un dominio $N_d$, su varianza y su varianza estimada están dados por
 $$
 \hat{N}_{d,\pi}=\sum_S\frac{z_{dk}}{\pi_k}
-$$$$
+\\
 Var(\hat{N}_{d,\pi})=\sum\sum_U\Delta_{kl}\frac{z_{dk}}{\pi_k}\frac{z_{dl}}{\pi_l}
-$$$$
+\\
 \widehat{Var}(\hat{N}_{d,\pi})=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{z_{dk}}{\pi_k}\frac{z_{dl}}{\pi_l}
 $$
 respectivamente.
@@ -407,9 +407,9 @@ respectivamente.
 Bajo cualquier diseño de muestreo, el estimador de Horvitz-Thompson para el total de la característica de interés $t_{yd}$ en el dominio $U_d$, su varianza y su varianza estimada están dados por
 $$
 \hat{t}_{yd,\pi}=\sum_S\frac{y_{dk}}{\pi_k}
-$$$$
+\\
 Var(\hat{t}_{yd,\pi})=\sum\sum_U\Delta_{kl}\frac{y_{dk}}{\pi_k}\frac{y_{dl}}{\pi_l}
-$$$$
+\\
 \widehat{Var}(\hat{t}_{yd,\pi})=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{y_{dk}}{\pi_k}\frac{y_{dl}}{\pi_l}
 $$
 respectivamente.
@@ -421,9 +421,9 @@ Una vez que los anteriores parámetros son estimados y siguiendo la expresión (
 Un estimador del promedio de un dominio $\bar{y}_{U_d}$, definido como una razón, su varianza y su varianza estimada están dados por
 $$
 \widetilde{y}_S=\dfrac{\hat{t}_{y,\pi}}{\hat{N}_{\pi}}=\sum_S\dfrac{y_{dk}}{\pi_k}\bigg/\sum_S\dfrac{z_{dk}}{\pi_k}.
-$$$$
+\\
 AVar(\widetilde{y}_S)=\frac{1}{N_d^2}\sum\sum_U\Delta_{kl}\left(\frac{y_{dk}-\bar{y}_{U_d}}{\pi_k}\right)\left(\frac{y_{dl}-\bar{y}_{U_d}}{\pi_l}\right)
-$$$$
+\\
 \widehat{Var}(\widetilde{y}_S)=\frac{1}{\hat{N}_d^2}\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\left(\frac{y_{dk}-\widetilde{y}_{S_d}}{\pi_k}\right)\left(\frac{y_l-\widetilde{y}_{S_d}}{\pi_l}\right)
 $$
 respectivamente.

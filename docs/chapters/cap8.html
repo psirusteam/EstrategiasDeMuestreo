@@ -126,6 +126,21 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<script>
+window.MathJax = window.MathJax || {};
+window.MathJax.tex = window.MathJax.tex || {};
+window.MathJax.tex.macros = Object.assign({}, window.MathJax.tex.macros || {}, {
+  bbeta: "\\boldsymbol{\\beta}",
+  beps: "\\boldsymbol{\\varepsilon}",
+  bmu: "\\boldsymbol{\\mu}",
+  bpi: "\\boldsymbol{\\pi}",
+  bxi: "\\boldsymbol{\\xi}",
+  Rrightarrow: "\\Longrightarrow",
+  bigtimes: "\\mathop{\\Large\\times}",
+  diagup: "\\mathbin{/}",
+  varpropto: "\\propto"
+});
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -493,9 +508,9 @@ e_k=\sum_{q=1}^Q\hat{a}_qy_{qk}
 <div class="callout-body-container callout-body">
 <p>Siendo <span class="math inline">\(B=f(t_1, t_2,\ldots, t_Q)\)</span> es una función de totales poblacionales, entonces un estimador aproximadamente insesgado de <span class="math inline">\(B\)</span>, su varianza aproximada y una estimación insesgada para esta última están dadas por las siguientes expresiones <span class="math display">\[
 \hat{B}_{\pi}=f(\hat{t}_{1,\pi}, \hat{t}_{2,\pi},\ldots,\hat{t}_{Q,\pi})
-\]</span><span class="math display">\[
+\\
 AVar(\hat{B}_\pi)=\sum\sum_U\Delta_{kl}\frac{E_k}{\pi_k}\frac{E_l}{\pi_l}
-\]</span><span class="math display">\[
+\\
 \widehat{Var}(\hat{B}_\pi)=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{e_k}{\pi_k}\frac{e_l}{\pi_l}
 \]</span> respectivamente, con <span class="math inline">\(\hat{t}_{q,\pi}\)</span> el estimador de Horvitz-Thompson de <span class="math inline">\(t_{q,\pi}\)</span> y tanto <span class="math inline">\(E_k\)</span> como <span class="math inline">\(e_k\)</span> se encuentran dados por las fórmulas (<a href="#eq-Ek" class="quarto-xref">ecuación&nbsp;<span>8.1</span></a>) y (<a href="#eq-ek" class="quarto-xref">ecuación&nbsp;<span>8.2</span></a>), en estricto orden.</p>
 <p><strong>Prueba.</strong></p>
@@ -537,9 +552,9 @@ B=\dfrac{t_y}{t_z}=\dfrac{\bar{y}_U}{\bar{z}_U}
 <div class="callout-body-container callout-body">
 <p>Un estimador para la razón poblacional <span class="math inline">\(B\)</span> de dos características de interés, su varianza y su varianza estimada están dados por <span class="math display">\[
 \hat{B}=\dfrac{\hat{t}_{y,\pi}}{\hat{t}_{z,\pi}}
-\]</span><span class="math display">\[
+\\
 AVar(\hat{T}_{\pi})=\sum\sum_U\Delta_{kl}\frac{E_k}{\pi_k}\frac{E_l}{\pi_l}.
-\]</span><span class="math display">\[
+\\
 \widehat{Var}(\hat{t}_{y,\pi})=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{e_k}{\pi_k}\frac{e_l}{\pi_l}
 \]</span> donde <span class="math inline">\(E_k=\dfrac{1}{t_x}(y_k-Bz_k)\)</span> y <span class="math inline">\(e_k=\dfrac{1}{\hat{t}_{z,\pi}}(y_k-\hat{B}z_k)\)</span> Nótese que <span class="math inline">\(\hat{B}\)</span> es aproximadamente insesgado para <span class="math inline">\(B\)</span> al igual que <span class="math inline">\(\widehat{Var}(\hat{t}_{y,\pi})\)</span> lo es para <span class="math inline">\(AVar(\hat{t}_{y,\pi})\)</span></p>
 <p><strong>Prueba.</strong></p>
@@ -616,9 +631,9 @@ AVar(\hat{B})=Var\left(\sum_S\frac{E_k}{\pi_k}\right)
 <div class="callout-body-container callout-body">
 <p>Bajo muestreo aleatorio simple, el estimador de la razón poblacional <span class="math inline">\(B\)</span>, su varianza y su varianza estimada están dados por <span class="math display">\[
 \hat{B}=\dfrac{\bar{y}_S}{\bar{z}_S}
-\]</span><span class="math display">\[
+\\
 AVar_{MAS}(\hat{B})=\frac{N^2}{n}\left(1-\frac{n}{N}\right)S^2_{EU}
-\]</span><span class="math display">\[
+\\
 \widehat{Var}_{MAS}(\hat{B})=\frac{N^2}{n}\left(1-\frac{n}{N}\right)S^2_{es}
 \]</span> respectivamente, con <span class="math inline">\(S^2_{EU}\)</span> y <span class="math inline">\(S^2_{es}\)</span> el estimador de la varianza de los valores de la variable linealizada <span class="math inline">\(E\)</span> y su aproximación <span class="math inline">\(e\)</span> en el universo <span class="math inline">\(U\)</span> y en la muestra <span class="math inline">\(s\)</span>. Recuerde que <span class="math inline">\(E_k=\dfrac{1}{t_x}(y_k-Bz_k)\)</span> y <span class="math inline">\(e_k=\dfrac{1}{\hat{t}_{z,\pi}}(y_k-\hat{B}z_k)\)</span>.</p>
 </div>
@@ -640,10 +655,10 @@ AVar_{MAS}(\hat{B})=\frac{N^2}{n}\left(1-\frac{n}{N}\right)S^2_{EU}
 <div class="callout-body-container callout-body">
 <p>Bajo muestreo aleatorio simple, el estimador de la razón poblacional <span class="math inline">\(B\)</span>, su varianza y su varianza estimada están dados por <span class="math display">\[
 \hat{B}=\dfrac{\sum_{i\in S_I}N_i\bar{y}_{S_i}}{\sum_{i\in S_I}N_i\bar{z}_{S_i}}
-\]</span><span class="math display">\[
+\\
 AVar_{MM}(\hat{B})=\frac{N_{I}^2}{n_{I}}\left(1-\frac{n_{I}}{N_{I}}\right)S^2_{t_{E}U_I}+
 \frac{N_{I}}{n_{I}}\sum_{i\in U_{I}}\frac{N_i^2}{n_i}\left(1-\frac{n_i}{N_i}\right)S^2_{y_{E_i}}
-\]</span><span class="math display">\[
+\\
 \widehat{Var}_{MM}(\hat{B})=\frac{N_{I}^2}{n_{I}}\left(1-\frac{n_{I}}{N_{I}}\right)S^2_{\hat{t}_{e}S_I}+
 \frac{N_{I}}{n_{I}}\sum_{i\in S_{I}}\frac{N_i^2}{n_i}\left(1-\frac{n_i}{N_i}\right)S^2_{e_{S_i}}
 \]</span> respectivamente. Donde <span class="math inline">\(S^2_{t_{E}U_I}\)</span> es la varianza poblacional de los totales <span class="math inline">\(t_{Ei}\)</span> <span class="math inline">\(i\in U_I\)</span> de todas y cada una de las unidades primarias de muestreo y <span class="math inline">\(S^2_{E_{U_i}}\)</span> es la varianza poblacional entre los valores de la variable <span class="math inline">\(E\)</span> que toman los elementos dentro de cada unidad primaria de muestreo. El razonamiento es similar con las cantidades <span class="math inline">\(S^2_{\hat{t}_{e}s_I}\)</span> y <span class="math inline">\(S^2_{y_{e_i}}\)</span>.</p>
@@ -684,9 +699,9 @@ p_k=\dfrac{E^*_k}{t_{E^*}}
 <div class="callout-body-container callout-body">
 <p>Un estimador del promedio poblacional <span class="math inline">\(\bar{y}_U\)</span>, definido como una razón, su varianza y su varianza estimada están dados por <span class="math display">\[
 \widetilde{y}_S=\dfrac{\hat{t}_{y,\pi}}{\hat{N}_{\pi}}=\sum_S\dfrac{y_k}{\pi_k}\bigg/\sum_S\dfrac{1}{\pi_k}.
-\]</span><span class="math display">\[
+\\
 AVar(\widetilde{y}_S)=\frac{1}{N^2}\sum\sum_U\Delta_{kl}\left(\frac{y_k-\bar{y}_U}{\pi_k}\right)\left(\frac{y_l-\bar{y}_U}{\pi_l}\right)
-\]</span><span class="math display">\[
+\\
 \widehat{Var}(\widetilde{y}_S)=\frac{1}{\hat{N}^2}\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\left(\frac{y_k-\widetilde{y}_S}{\pi_k}\right)\left(\frac{y_l-\widetilde{y}_S}{\pi_l}\right)
 \]</span> respectivamente.</p>
 </div>
@@ -708,9 +723,9 @@ AVar(\widetilde{y}_S)=\frac{1}{N^2}\sum\sum_U\Delta_{kl}\left(\frac{y_k-\bar{y}_
 <div class="callout-body-container callout-body">
 <p>Bajo cualquier diseño de muestreo, el estimador de Horvitz-Thompson para el tamaño absoluto de un dominio <span class="math inline">\(N_d\)</span>, su varianza y su varianza estimada están dados por <span class="math display">\[
 \hat{N}_{d,\pi}=\sum_S\frac{z_{dk}}{\pi_k}
-\]</span><span class="math display">\[
+\\
 Var(\hat{N}_{d,\pi})=\sum\sum_U\Delta_{kl}\frac{z_{dk}}{\pi_k}\frac{z_{dl}}{\pi_l}
-\]</span><span class="math display">\[
+\\
 \widehat{Var}(\hat{N}_{d,\pi})=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{z_{dk}}{\pi_k}\frac{z_{dl}}{\pi_l}
 \]</span> respectivamente.</p>
 </div>
@@ -727,9 +742,9 @@ Var(\hat{N}_{d,\pi})=\sum\sum_U\Delta_{kl}\frac{z_{dk}}{\pi_k}\frac{z_{dl}}{\pi_
 <div class="callout-body-container callout-body">
 <p>Bajo cualquier diseño de muestreo, el estimador de Horvitz-Thompson para el total de la característica de interés <span class="math inline">\(t_{yd}\)</span> en el dominio <span class="math inline">\(U_d\)</span>, su varianza y su varianza estimada están dados por <span class="math display">\[
 \hat{t}_{yd,\pi}=\sum_S\frac{y_{dk}}{\pi_k}
-\]</span><span class="math display">\[
+\\
 Var(\hat{t}_{yd,\pi})=\sum\sum_U\Delta_{kl}\frac{y_{dk}}{\pi_k}\frac{y_{dl}}{\pi_l}
-\]</span><span class="math display">\[
+\\
 \widehat{Var}(\hat{t}_{yd,\pi})=\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\frac{y_{dk}}{\pi_k}\frac{y_{dl}}{\pi_l}
 \]</span> respectivamente.</p>
 </div>
@@ -747,9 +762,9 @@ Var(\hat{t}_{yd,\pi})=\sum\sum_U\Delta_{kl}\frac{y_{dk}}{\pi_k}\frac{y_{dl}}{\pi
 <div class="callout-body-container callout-body">
 <p>Un estimador del promedio de un dominio <span class="math inline">\(\bar{y}_{U_d}\)</span>, definido como una razón, su varianza y su varianza estimada están dados por <span class="math display">\[
 \widetilde{y}_S=\dfrac{\hat{t}_{y,\pi}}{\hat{N}_{\pi}}=\sum_S\dfrac{y_{dk}}{\pi_k}\bigg/\sum_S\dfrac{z_{dk}}{\pi_k}.
-\]</span><span class="math display">\[
+\\
 AVar(\widetilde{y}_S)=\frac{1}{N_d^2}\sum\sum_U\Delta_{kl}\left(\frac{y_{dk}-\bar{y}_{U_d}}{\pi_k}\right)\left(\frac{y_{dl}-\bar{y}_{U_d}}{\pi_l}\right)
-\]</span><span class="math display">\[
+\\
 \widehat{Var}(\widetilde{y}_S)=\frac{1}{\hat{N}_d^2}\sum\sum_S \dfrac{\Delta_{kl}}{\pi_{kl}}\left(\frac{y_{dk}-\widetilde{y}_{S_d}}{\pi_k}\right)\left(\frac{y_l-\widetilde{y}_{S_d}}{\pi_l}\right)
 \]</span> respectivamente.</p>
 </div>
