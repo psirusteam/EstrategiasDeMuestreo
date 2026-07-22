@@ -9,6 +9,7 @@ library(knitr)
 opts_chunk$set(cache = TRUE)
 knit_theme$set("acid")
 ```
+
 # Estimación con información auxiliar
 
 > Si los datos son útiles en la estimación  o no, dependerá de la manera en que
@@ -762,3 +763,9 @@ GREG.SI(N,n,estima,x,tx, b, b0=FALSE)
 Estimaciones <- GREG.SI(N, n, estima, x, tx, b, b0 = FALSE)
 knitr::kable(Estimaciones)
 ```
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

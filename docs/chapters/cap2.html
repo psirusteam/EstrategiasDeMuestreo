@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Muestras probabilísticas y estimadores – Estrategias de Muestreo</title>
+<title>2&nbsp; Muestras probabilísticas y estimadores – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -126,6 +126,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -199,7 +200,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -212,6 +213,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -331,7 +338,10 @@ window.Quarto = {
   <li><a href="#el-estimador-de-horvitz-thompson-en-los-diseños-con-reemplazo" id="toc-el-estimador-de-horvitz-thompson-en-los-diseños-con-reemplazo" class="nav-link" data-scroll-target="#el-estimador-de-horvitz-thompson-en-los-diseños-con-reemplazo"><span class="header-section-number">2.2.3</span> El estimador de Horvitz-Thompson en los diseños con reemplazo</a></li>
   </ul></li>
   <li><a href="#muestras-representativas" id="toc-muestras-representativas" class="nav-link" data-scroll-target="#muestras-representativas"><span class="header-section-number">2.3</span> Muestras representativas</a></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">2.4</span> Ejercicios</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">2.4</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -518,7 +528,7 @@ n(S)=m=\sum_{k \in U}n_k.
 \mathcal{R}_m=\{(2,0,0)',(0,0,2)',(0,2,0)',(1,1,0)',(1,0,1)',(0,1,1)'\}
 \end{equation*}\]</span></p></li>
 </ul>
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que geométricamente cada vector <span class="math inline">\(\mathbf{s}\)</span> representa el vértice de un <span class="math inline">\(N\)</span>-cubo. Además, se tiene el siguiente resultado:</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que geométricamente cada vector <span class="math inline">\(\mathbf{s}\)</span> representa el vértice de un <span class="math inline">\(N\)</span>-cubo. Además, se tiene el siguiente resultado:</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Resultado">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -678,7 +688,7 @@ Pr(S=s)=p(s) \ \ \ \ \ \ \ \ \ \ \ \ \text{para todo } s\in Q  .
 <p>Un <strong>algoritmo de selección</strong> es un procedimiento usado para seleccionar una muestra probabilística.</p>
 </div>
 </div>
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que una forma de seleccionar una muestra es listar todas las posibles muestras, generar una variable aleatoria con distribución uniforme en el intervalo <span class="math inline">\([0,1]\)</span> para luego hacer la correspondiente selección. A este tipo de algoritmos que listan todas las posibles muestras se les conoce con el nombre de <strong>algoritmos de selección enumerativos</strong><!-- index: Algoritmo de selección enumerativo -->; sin embargo, este tipo de algoritmos son ineficientes computacionalmente y sólo son posibles de implementar cuando el diseño de muestreo es conocido y el tamaño poblacional <span class="math inline">\(N\)</span> es pequeño. A lo largo del libro se incluirán diversos algoritmos de selección específicos para cada diseño de muestreo que permitan la selección de una muestra probabilística.</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que una forma de seleccionar una muestra es listar todas las posibles muestras, generar una variable aleatoria con distribución uniforme en el intervalo <span class="math inline">\([0,1]\)</span> para luego hacer la correspondiente selección. A este tipo de algoritmos que listan todas las posibles muestras se les conoce con el nombre de <strong>algoritmos de selección enumerativos</strong><!-- index: Algoritmo de selección enumerativo -->; sin embargo, este tipo de algoritmos son ineficientes computacionalmente y sólo son posibles de implementar cuando el diseño de muestreo es conocido y el tamaño poblacional <span class="math inline">\(N\)</span> es pequeño. A lo largo del libro se incluirán diversos algoritmos de selección específicos para cada diseño de muestreo que permitan la selección de una muestra probabilística.</p>
 </section>
 </section>
 <section id="probabilidad-de-inclusión" class="level3" data-number="2.1.4">
@@ -1267,12 +1277,12 @@ Var_2(\hat{t}_{y,\pi})&amp;=
 <li>Es posible que las estimaciones de la varianza arrojen resultados negativos, que no pueden ser utilizados ni interpretados. Para evitar esta situación, es necesario garantizar que la covarianza entre las estadísticas de inclusión para cada par de elementos en la población sea negativa (<span class="math inline">\(\Delta_{kl}&lt;0\)</span> <span class="math inline">\(\forall\)</span> $k l $).</li>
 <li>No necesariamente las estimaciones arrojadas por las anteriores expresiones coinciden en todos los casos.</li>
 </ol>
-<p>Por su parte, <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> agrega que en la práctica, la utilización de las expresiones de los estimadores de la varianza es muy difícil de implementar pues la doble suma hace que el proceso de cálculo computacional sea muy largo e ineficiente. Por lo tanto, para cada diseño de muestreo que se utilice, se deben crear expresiones que pueden ser simplificadas o en algunos casos se deben utilizar aproximaciones.</p>
+<p>Por su parte, <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> agrega que en la práctica, la utilización de las expresiones de los estimadores de la varianza es muy difícil de implementar pues la doble suma hace que el proceso de cálculo computacional sea muy largo e ineficiente. Por lo tanto, para cada diseño de muestreo que se utilice, se deben crear expresiones que pueden ser simplificadas o en algunos casos se deben utilizar aproximaciones.</p>
 </section>
 <section id="intervalo-de-confianza-para-el-estimador-de-horvitz-thompson" class="level4" data-number="2.2.1.4">
 <h4 data-number="2.2.1.4" class="anchored" data-anchor-id="intervalo-de-confianza-para-el-estimador-de-horvitz-thompson"><span class="header-section-number">2.2.1.4</span> Intervalo de confianza para el estimador de Horvitz-Thompson</h4>
 <!-- index: Intervalo de confianza -->
-<p><span class="citation" data-cites="Hajek">H’ajek (<a href="#ref-Hajek" role="doc-biblioref">1960</a>)</span> demuestra la convergencia asintótica del estimador de Horvitz-Thompson a una distribución normal. Cuando el tamaño de muestra es suficientemente grande (que dependiendo del comportamiento de la población puede bastar con algunas docenas de individuos), se puede construir un intervalo de confianza de nivel <span class="math inline">\((1-\alpha)\)</span> para el total poblacional <span class="math inline">\(t_y\)</span> de acuerdo con:</p>
+<p><span class="citation" data-cites="Hajek">Hájek (<a href="#ref-Hajek" role="doc-biblioref">1960</a>)</span> demuestra la convergencia asintótica del estimador de Horvitz-Thompson a una distribución normal. Cuando el tamaño de muestra es suficientemente grande (que dependiendo del comportamiento de la población puede bastar con algunas docenas de individuos), se puede construir un intervalo de confianza de nivel <span class="math inline">\((1-\alpha)\)</span> para el total poblacional <span class="math inline">\(t_y\)</span> de acuerdo con:</p>
 <p><span id="eq-ic"><span class="math display">\[
 IC(1-\alpha)=\left[\hat{t}_{y,\pi}-z_{1-\alpha / 2}\sqrt{ Var(\hat{t}_{y,\pi})},\hat{t}_{y,\pi}+z_{1-\alpha / 2}\sqrt{Var(\hat{t}_{y,\pi})}\right]
 \tag{2.8}\]</span></span></p>
@@ -1340,7 +1350,7 @@ N=\sum_U 1,
 &amp;=\sum_S\dfrac{y_k}{\pi_k} \ \Bigl/ \ \sum_S\dfrac{1}{\pi_k}.
 \end{align}\]</span></p>
 <p>La anterior expresión es una razón, o un cociente entre dos totales poblacionales. Las propiedades estadísticas de los anteriores estimadores serán tratados más adelante en las secciones pertinentes del libro.</p>
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> cita que aun al conocer <span class="math inline">\(N\)</span>, una mala propiedad del estimador de Horvitz-Thompson para la media poblacional se tiene al utilizarlo cuando la característica de interés es constante para todos los elementos de la población (<span class="math inline">\(y_k=C\)</span> <span class="math inline">\(\forall k \in U\)</span>). Por supuesto, bajo las anteriores condiciones es claro que la media poblacional es igual a la constante (<span class="math inline">\(\bar{y}_U=C\)</span>). Sin embargo, el estimador <span class="math inline">\(\hat{\bar{y}}_{\pi}\)</span> toma la siguiente forma</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> cita que aun al conocer <span class="math inline">\(N\)</span>, una mala propiedad del estimador de Horvitz-Thompson para la media poblacional se tiene al utilizarlo cuando la característica de interés es constante para todos los elementos de la población (<span class="math inline">\(y_k=C\)</span> <span class="math inline">\(\forall k \in U\)</span>). Por supuesto, bajo las anteriores condiciones es claro que la media poblacional es igual a la constante (<span class="math inline">\(\bar{y}_U=C\)</span>). Sin embargo, el estimador <span class="math inline">\(\hat{\bar{y}}_{\pi}\)</span> toma la siguiente forma</p>
 <p><span class="math display">\[\begin{equation}
 \hat{\bar{y}}_{\pi}=\dfrac{1}{N}\sum_s\frac{y_k}{\pi_k}=\dfrac{1}{N}\sum_s\frac{C}{\pi_k}=\dfrac{C}{N}\sum_s\frac{1}{\pi_k}=C\frac{\hat{N}_{\pi}}{N}.
 \end{equation}\]</span></p>
@@ -2529,9 +2539,9 @@ CVE             41</code></pre>
 <p>La teoría de muestreo se ha visto enriquecida en las últimas décadas por valiosos aportes a nivel mundial; aunque la base de la teoría de muestreo es la teoría de probabilidad, cuyo desarrollo axiomático cuenta varios centenares de años, su desarrollo práctico no sucedió sino hasta comienzos del siglo XX. Sin embargo, en la teoría clásica de inferencia estadística, basados en el pensamiento de Ronald Fisher y otros, asumen que la población es infinita. Un aspecto fundamental de la teoría de muestreo es que está basada en la realidad, en donde las poblaciones por más grandes que sean son de naturaleza finita.</p>
 <p>Partiendo de este hecho es posible fundamentar la inferencia basada en una muestra aleatoria pero que proviene de una población finita y desde esta perspectiva los resultados de las inferencias diferirán de una manera significativa. De hecho, el llamado de atención es para que las personas que hacen inferencia con datos provenientes de un estudio por muestreo, se actualicen y no cometan grandes equivocaciones a la hora de presentar los resultados de la inferencia <span class="citation" data-cites="CharSki">(<a href="#ref-CharSki" role="doc-biblioref">Chambers y Skinner 2003</a>)</span>. Por eso la teoría de muestreo cubre aspectos fundamentales de la estadística, porque desde un experimento controlado, hasta una encuesta por muestreo (Survey sampling), se debe pensar en el mecanismo de recolección de la información, y desde allí en la inferencia.</p>
 <p>Un ejemplo común en las aulas de clase es describir la población en el tablero mediante una carita feliz, el profesor dice que una muestra representativa de la población es aquella muestra en donde se sigue viendo la misma carita feliz. Es decir, existe la creencia que una muestra representativa es un modelo reducido de la población y de aquí se desprende un argumento de validez sobre la muestra: una buena muestra es aquella que se parece a la población, de tal forma que las categorías aparecen con las mismas proporciones que en la población. Nada más falso que esta creencia. En algunos casos es fundamental sobre-representar algunas categorías o incluso seleccionar unidades con probabilidades desiguales.</p>
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> cita el siguiente ejemplo: suponga que el objetivo es estimar la producción de hierro en un país y que nosotros sabemos que el hierro es producido, por dos compañías gigantes con miles de empleados y por cientos de pequeñas compañías con pocos empleados. ¿La mejor forma de seleccionar la muestra consiste en asignar la misma probabilidad a cada compañía? Claro que no. Primero averiguamos la producción de las grandes compañías. Después, seleccionamos una muestra de las compañías pequeñas.</p>
-<p>La muestra no debe ser un modelo reducido de la población; debe ser una herramienta usada para obtener estimaciones. Es así como el concepto de muestra representativa pierde peso. Más aún, para <span class="citation" data-cites="HajBook">H’ajek (<a href="#ref-HajBook" role="doc-biblioref">1981</a>)</span>, una estrategia de muestreo es una dupla: diseño de muestreo (distribución de probabilidad sobre todas las posibles muestras) y estimador. La teoría de muestreo se ha ocupado de estudiar estrategias óptimas que permitan asegurar la calidad de las estimaciones. Entonces, el concepto de representatividad debería estar asociado con las estrategias de muestreo y no sólo con las muestras.</p>
-<p>Siguiendo con <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span>, una estrategia se dice representativa si permite estimar un total poblacional exactamente; es decir, sin sesgo y con varianza nula. Si se utiliza, por ejemplo, el estimador de Horvitz-Thompson junto con un diseño de muestreo apropiado, esta estrategia es representativa sólo sí, junto con la muestra seleccionada, el estimador reproduce algunos totales de la población; tales muestras se llaman muestras balanceadas. Existen también, estimadores que brindan a la estrategia el calificativo de representativa, algunos de ellos son conocidos como estimadores de calibración.</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> cita el siguiente ejemplo: suponga que el objetivo es estimar la producción de hierro en un país y que nosotros sabemos que el hierro es producido, por dos compañías gigantes con miles de empleados y por cientos de pequeñas compañías con pocos empleados. ¿La mejor forma de seleccionar la muestra consiste en asignar la misma probabilidad a cada compañía? Claro que no. Primero averiguamos la producción de las grandes compañías. Después, seleccionamos una muestra de las compañías pequeñas.</p>
+<p>La muestra no debe ser un modelo reducido de la población; debe ser una herramienta usada para obtener estimaciones. Es así como el concepto de muestra representativa pierde peso. Más aún, para <span class="citation" data-cites="HajBook">Hájek (<a href="#ref-HajBook" role="doc-biblioref">1981</a>)</span>, una estrategia de muestreo es una dupla: diseño de muestreo (distribución de probabilidad sobre todas las posibles muestras) y estimador. La teoría de muestreo se ha ocupado de estudiar estrategias óptimas que permitan asegurar la calidad de las estimaciones. Entonces, el concepto de representatividad debería estar asociado con las estrategias de muestreo y no sólo con las muestras.</p>
+<p>Siguiendo con <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span>, una estrategia se dice representativa si permite estimar un total poblacional exactamente; es decir, sin sesgo y con varianza nula. Si se utiliza, por ejemplo, el estimador de Horvitz-Thompson junto con un diseño de muestreo apropiado, esta estrategia es representativa sólo sí, junto con la muestra seleccionada, el estimador reproduce algunos totales de la población; tales muestras se llaman muestras balanceadas. Existen también, estimadores que brindan a la estrategia el calificativo de representativa, algunos de ellos son conocidos como estimadores de calibración.</p>
 </section>
 <section id="ejercicios" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="ejercicios"><span class="header-section-number">2.4</span> Ejercicios</h2>
@@ -2602,6 +2612,10 @@ p_k=
 <ol start="13" type="1">
 <li>Demuestre rigurosamente que el estimador de la varianza del estimador de Hansen-Hurwitz corresponde a la <a href="#eq-varhh-est" class="quarto-xref">ecuación&nbsp;<span>2.13</span></a>.</li>
 </ol>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -2618,10 +2632,10 @@ Cassel, C. M., C. E. Särndal, y J. Wretman. 1976. <em>Foundations of Inference 
 Chambers, R. L., y C. J. Skinner, eds. 2003. <em>Analysis of Survey Data</em>. Wiley.
 </div>
 <div id="ref-Hajek" class="csl-entry" role="listitem">
-H’ajek, J. 1960. <span>«Limiting distributions in simple random sampling from a finite poulation»</span>. <em>Publication of Mathematical Institute of the Hungarian Academy of Science</em> 5: 361-74.
+Hájek, J. 1960. <span>«Limiting distributions in simple random sampling from a finite population»</span>. <em>Publication of Mathematical Institute of the Hungarian Academy of Science</em> 5: 361-74.
 </div>
 <div id="ref-HajBook" class="csl-entry" role="listitem">
-H’ajek, J. 1981. <em>Sampling from a finite population</em>. New York: Marcel Dekker.
+Hájek, J. 1981. <em>Sampling from a finite population</em>. New York: Marcel Dekker.
 </div>
 <div id="ref-Han" class="csl-entry" role="listitem">
 Hansen, M. H., W. N. Hurwitz, y G. Madow W. 1953. <em>Sample survey methods and theory. Vols. I and II</em>. John Wiley; Sons.
@@ -2642,7 +2656,7 @@ Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Samp
 Sen, A. R. 1953. <span>«On the estimate of the variance in sampling with varying probabilities»</span>. <em>Journal of the Indian Society of Agricultural Statistics</em> 5: 119-27.
 </div>
 <div id="ref-Til" class="csl-entry" role="listitem">
-Till’e, Y. 2006. <em>Sampling Algorithms</em>. Springer.
+Tillé, Y. 2006. <em>Sampling Algorithms</em>. Springer.
 </div>
 <div id="ref-YG" class="csl-entry" role="listitem">
 Yates, F., y P. M. Grundy. 1953. <span>«Selecting withou replacement from within estrata with probability proportional to size»</span>. <em>Journal of the Royal Statitical Society</em> B15: 235-61.
@@ -3212,7 +3226,7 @@ Yates, F., y P. M. Grundy. 1953. <span>«Selecting withou replacement from withi
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -3223,4 +3237,5 @@ Yates, F., y P. M. Grundy. 1953. <span>«Selecting withou replacement from withi
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

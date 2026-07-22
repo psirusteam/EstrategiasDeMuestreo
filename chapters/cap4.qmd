@@ -1317,3 +1317,9 @@ $${x}=\{1005, 1072,  884,  907, 1068,  625,  705,  909, 692,  891, 1046, 1052\}$
 - Utilice el análisis de regresión simple para estimar el valor del intercepto y decida si este es estadísticamente diferente de cero.
 - Para un tamaño de muestra $m=6$, utilice la expresión (4.2.13) y los anteriores argumentos para justificar o descalificar la escogencia del diseño de muestreo PPT para esta población.
 - Asumiendo que los datos del ejercicio 4.5 provienen de un diseño de muestreo PPT, calcule la estimación de Hansen-Hurwitz para el total de la característica de interés, reporte el coeficiente de variación estimado y un intervalo de confianza al 95%. También calcule la estimación de Horvitz-Thompson para el total de la característica de interés.
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

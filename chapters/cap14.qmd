@@ -854,3 +854,9 @@ $$
 1. Obtenga una expresión para las probabilidades de inclusión de Holmberg cuando todas las medidas de tamaño son constantes en un estudio multipropósito.
 
 1. Demuestre la expresión (13.3.13)
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

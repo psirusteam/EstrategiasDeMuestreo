@@ -785,3 +785,9 @@ $$
 1. Calcule una estimación insesgada para el total poblacional de $y$.
 1. Obtenga una estimación para la varianza y reporte el respectivo coeficiente de variación estimado.
 1. Obtenga una estimación para la varianza y reporte el respectivo coeficiente de variación estimado, suponiendo que la muestra hubiese sido obtenido de un muestreo, en una sola fase, aleatorio estratificado de tamaño $n=80$.
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

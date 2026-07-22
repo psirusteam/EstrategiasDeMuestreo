@@ -325,3 +325,9 @@ Obtenga el costo generado por la fase de aterrizaje para las anteriores muestras
 - ?Utilizar muestreo balanceado siempre mejora la eficiencia de la estrategia de muestreo?
 - ?Utilizar calibración siempre mejora la eficiencia de la estrategia de muestreo balanceado?
 - ?Utilizar calibración y muestreo balanceado siempre mejora la eficiencia de la estrategia de muestreo?
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

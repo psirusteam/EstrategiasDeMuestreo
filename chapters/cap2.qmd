@@ -1579,3 +1579,9 @@ Siguiendo con @Til, una estrategia se dice representativa si permite estimar un 
   - ¿Es posible utilizar otro tipo de estimadores para obtener estimaciones insesgadas del total poblacional?
 
 13. Demuestre rigurosamente que el estimador de la varianza del estimador de Hansen-Hurwitz corresponde a la @eq-varhh-est.
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

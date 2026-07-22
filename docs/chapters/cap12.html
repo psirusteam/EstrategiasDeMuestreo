@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>12&nbsp; Muestreo en dos fases – Estrategias de Muestreo</title>
+<title>12&nbsp; Muestreo en dos fases – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -126,6 +126,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -199,7 +200,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -212,6 +213,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -331,7 +338,10 @@ window.Quarto = {
   <li><a href="#segunda-configuración-selección-proporcional-al-tamaño" id="toc-segunda-configuración-selección-proporcional-al-tamaño" class="nav-link" data-scroll-target="#segunda-configuración-selección-proporcional-al-tamaño"><span class="header-section-number">12.6.2</span> Segunda configuración: selección proporcional al tamaño</a></li>
   <li><a href="#tercera-configuración-estimación-de-calibración" id="toc-tercera-configuración-estimación-de-calibración" class="nav-link" data-scroll-target="#tercera-configuración-estimación-de-calibración"><span class="header-section-number">12.6.3</span> Tercera configuración: estimación de calibración</a></li>
   </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">12.7</span> Ejercicios</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">12.7</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -364,7 +374,7 @@ window.Quarto = {
 <h2 data-number="12.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">12.1</span> Introducción</h2>
 <!-- index: Diseño de muestreo en dos fases -->
 <p>Propuesto por <span class="citation" data-cites="Neyman38">Neyman (<a href="#ref-Neyman38" role="doc-biblioref">1938</a>)</span>, el muestreo en dos fases es el diseño indicado cuando no se tienen conocimiento pleno del comportamiento estructural de la población de interés y esto se ve reflejado en un pésimo marco de muestreo que no contempla variables de información auxiliar (de ningún tipo: ni discreto, ni continuo) y por ello, no es posible proponer el uso de una estrategia de muestreo óptima (diseños avanzados proporcionales al tamaño o estratificados y estimadores de regresión o de calibración) para la estimación de los parámetros poblacionales de interés.</p>
-<p>En <span class="citation" data-cites="Swe">(<a href="#ref-Swe" role="doc-biblioref">Särndal y Sweensson 1987</a>)</span> aparece un marco general que desarrolla la teoría del muestreo en dos fases de modo teórico e inducido por los principios del estimador de Horvitz-Thompson. El diseño de muestreo en dos fases (también conocido como muestreo bifásico o muestreo doble) se utiliza cuando existe poco o nulo conocimiento sobre el comportamiento de la característica de interés a través de los individuos que conforman la población. Por ejemplo, el estimador de razón combinada requiere que todos los elementos de la población puedan ser estratificados y que el total poblacional de la característica de información auxiliar, <span class="math inline">\(t_x=\sum_{U}x_k\)</span>, sea conocido; sin embargo, en muchos casos prácticos no se tiene este tipo de información auxiliar (pertenencia de los miembros de la población a estratos específicos o el total poblacional de las características de información auxiliar). En estos casos en donde el marco de muestreo contiene poca o deficiente información para proponer un diseño de muestreo eficiente, el estadístico puede recurrir a las siguientes dos opciones <span class="citation" data-cites="Sar">(<a href="#ref-Sar" role="doc-biblioref">Särndal et&nbsp;al. 1992</a>)</span>:</p>
+<p>En <span class="citation" data-cites="Swe">(<a href="#ref-Swe" role="doc-biblioref">Särndal y Swensson 1987</a>)</span> aparece un marco general que desarrolla la teoría del muestreo en dos fases de modo teórico e inducido por los principios del estimador de Horvitz-Thompson. El diseño de muestreo en dos fases (también conocido como muestreo bifásico o muestreo doble) se utiliza cuando existe poco o nulo conocimiento sobre el comportamiento de la característica de interés a través de los individuos que conforman la población. Por ejemplo, el estimador de razón combinada requiere que todos los elementos de la población puedan ser estratificados y que el total poblacional de la característica de información auxiliar, <span class="math inline">\(t_x=\sum_{U}x_k\)</span>, sea conocido; sin embargo, en muchos casos prácticos no se tiene este tipo de información auxiliar (pertenencia de los miembros de la población a estratos específicos o el total poblacional de las características de información auxiliar). En estos casos en donde el marco de muestreo contiene poca o deficiente información para proponer un diseño de muestreo eficiente, el estadístico puede recurrir a las siguientes dos opciones <span class="citation" data-cites="Sar">(<a href="#ref-Sar" role="doc-biblioref">Särndal et&nbsp;al. 1992</a>)</span>:</p>
 <ol type="1">
 <li>Usar un diseño de muestreo simple como el muestreo aleatorios simple sin reemplazo o el muestreo aleatorio de conglomerados y combinarlo con el estimador de Horvitz-Thompson para ganar más precisión conforme el tamaño de muestra aumenta.</li>
 <li>Obtener información acerca de la población para construir un nuevo marco muestral. Si se utiliza el estimador de regresión se logra una precisión deseada con un tamaño de muestra moderado.</li>
@@ -421,7 +431,7 @@ p(s)=\sum_{s_a \supset s}p_a(s_a)p(s|s_a)
 <p>Nótese que otro posible estimador del total poblacional de la características de interés es <span class="math inline">\(\sum_{S_a}y_k/\pi_{ak}\)</span>, este es otro estimador inútil puesto que sólo se podría calcular si <span class="math inline">\(y_k\)</span> y <span class="math inline">\(\pi_{ak}\)</span> fueran conocidos para todo <span class="math inline">\(k\in{s_a}\)</span>. Pero <span class="math inline">\(y_k\)</span> solamente es conocido en la submuestra para <span class="math inline">\(k\in{s}\)</span>. Por lo tanto, condicional a <span class="math inline">\(s_a\)</span>, la muestra de la primera fase, la siguiente cantidad, <span class="math inline">\(\sum_{s_a}y_k/\pi_{ak}\)</span>, es estimada insesgadamente por el estimador de Horvitz-Thompson condicionado mediante <span class="math display">\[
 \hat{t}_{y,\pi^*}=\sum_{s}\frac{y_k}{\pi_{k}^*}=\sum_{s}\frac{y_k}{\pi_{ak}\pi_{k\mid{s_a}}}
 \]</span></p>
-<p>y definido como el estimador <span class="math inline">\(\pi^*\)</span> <span class="citation" data-cites="Swe">(<a href="#ref-Swe" role="doc-biblioref">Särndal y Sweensson 1987</a>)</span>.</p>
+<p>y definido como el estimador <span class="math inline">\(\pi^*\)</span> <span class="citation" data-cites="Swe">(<a href="#ref-Swe" role="doc-biblioref">Särndal y Swensson 1987</a>)</span>.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Resultado">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -827,7 +837,7 @@ E_{MAS}(Var_{PPT}(\hat{t}_y))
 <li>En algunas situaciones, la eficiencia puede decrecer dramáticamente si se ignora alguna característica de información auxiliar en el proceso de calibración. Incluso es posible obtener un estimador de calibración cuya varianza sea menor que la de aquel construido con base en información auxiliar completa.</li>
 <li>No siempre es posible contar con información auxiliar completa así que se debe lograr el objetivo de mejorar la estimación con la información que se tiene a la mano. Es importante conocer cómo este tipo de limitaciones afecta la varianza del estimador.</li>
 </ol>
-<p><span class="citation" data-cites="Est1">Estevao y Särndal (<a href="#ref-Est1" role="doc-biblioref">2001</a>)</span> han mostrado que existen exactamente diez casos diferentes conteniendo distintas configuraciones de información auxiliar para los estimadores de calibración y da cuenta de la varianza de los mismos dependiendo del caso. El tratamiento de <span class="citation" data-cites="Swe">Särndal y Sweensson (<a href="#ref-Swe" role="doc-biblioref">1987</a>)</span> para el estimador general de regresión es exhaustivo y comprende una muy buena fuente de referencia para estrategias de muestreo de tipo bifásico para las cuales en la etapa de estimación consideran un modelo de superpoblación para asistir en la eficiencia del estimador. Esta lectura puede ser complementada con el capítulo 9 de <span class="citation" data-cites="Sar">Särndal et&nbsp;al. (<a href="#ref-Sar" role="doc-biblioref">1992</a>)</span>.</p>
+<p><span class="citation" data-cites="Est1">Estevao y Särndal (<a href="#ref-Est1" role="doc-biblioref">2001</a>)</span> han mostrado que existen exactamente diez casos diferentes conteniendo distintas configuraciones de información auxiliar para los estimadores de calibración y da cuenta de la varianza de los mismos dependiendo del caso. El tratamiento de <span class="citation" data-cites="Swe">Särndal y Swensson (<a href="#ref-Swe" role="doc-biblioref">1987</a>)</span> para el estimador general de regresión es exhaustivo y comprende una muy buena fuente de referencia para estrategias de muestreo de tipo bifásico para las cuales en la etapa de estimación consideran un modelo de superpoblación para asistir en la eficiencia del estimador. Esta lectura puede ser complementada con el capítulo 9 de <span class="citation" data-cites="Sar">Särndal et&nbsp;al. (<a href="#ref-Sar" role="doc-biblioref">1992</a>)</span>.</p>
 </section>
 <section id="un-modelo-para-la-ausencia-de-respuesta" class="level3" data-number="12.5.2">
 <h3 data-number="12.5.2" class="anchored" data-anchor-id="un-modelo-para-la-ausencia-de-respuesta"><span class="header-section-number">12.5.2</span> Un modelo para la ausencia de respuesta</h3>
@@ -1189,6 +1199,10 @@ Tabla&nbsp;12.1: Estimaciones realizadas bajo distintos escenarios para el muest
 <li>Obtenga una estimación para la varianza y reporte el respectivo coeficiente de variación estimado.</li>
 <li>Obtenga una estimación para la varianza y reporte el respectivo coeficiente de variación estimado, suponiendo que la muestra hubiese sido obtenido de un muestreo, en una sola fase, aleatorio estratificado de tamaño <span class="math inline">\(n=80\)</span>.</li>
 </ol>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -1220,7 +1234,7 @@ Rao, J. N. K. 1973. <span>«On Double Sampling for Stratification and Analityc S
 Särndal, C. E., y S. Lundström. 2004. <em>Estimation in Surveys with Nonresponse</em>. Wiley.
 </div>
 <div id="ref-Swe" class="csl-entry" role="listitem">
-Särndal, C. E., y B. Sweensson. 1987. <span>«A General View of Estimation for Two Phases of Selection with Aplications to Two-phase Sampling and Nonresponse»</span>. <em>International Statistical Review</em> 55: 279-94.
+Särndal, C. E., y B. Swensson. 1987. <span>«A General View of Estimation for Two Phases of Selection with Applications to Two-phase Sampling and Nonresponse»</span>. <em>International Statistical Review</em> 55: 279-94.
 </div>
 <div id="ref-Sar" class="csl-entry" role="listitem">
 Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Sampling</em>. Springer, New York.
@@ -1800,7 +1814,7 @@ Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Samp
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -1811,4 +1825,5 @@ Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Samp
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Muestras con probabilidades simples – Estrategias de Muestreo</title>
+<title>3&nbsp; Muestras con probabilidades simples – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -126,6 +126,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -199,7 +200,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -212,6 +213,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -345,7 +352,10 @@ window.Quarto = {
   <li><a href="#diseño-de-muestreo-q-sistemático" id="toc-diseño-de-muestreo-q-sistemático" class="nav-link" data-scroll-target="#diseño-de-muestreo-q-sistemático"><span class="header-section-number">3.4.4</span> Diseño de muestreo <span class="math inline">\(q\)</span>-sistemático</a></li>
   <li><a href="#marco-y-lucy-3" id="toc-marco-y-lucy-3" class="nav-link" data-scroll-target="#marco-y-lucy-3"><span class="header-section-number">3.4.5</span> Marco y Lucy</a></li>
   </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">3.5</span> Ejercicios</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">3.5</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -425,7 +435,7 @@ p(s)=
 <section id="algoritmos-de-selección" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="algoritmos-de-selección"><span class="header-section-number">3.1.1</span> Algoritmos de selección</h3>
 <!-- index: Algoritmos de selección -->
-<p>Durante muchos años, la teoría de muestreo se centró en la parte de la extracción de muestras aleatorias, más que en la construcción de los estimadores. Con la gran ventaja de los nuevos procesadores, lo anterior pasa a un segundo plano. A continuación se presentan dos métodos de selección de una muestra aleatoria simple de tamaño <span class="math inline">\(n\)</span> de una población de tamaño <span class="math inline">\(N\)</span>. Existen bastantes métodos de selección de una muestra aleatoria sin reemplazo, en esta sección se abordan dos algoritmos de selección. El primero da una asunción más simple, y puede ser comparado con el conocido método de la extracción de una balota; sin embargo, <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que este método es ineficiente computacionalmente. El segundo método basado en un algoritmo secuencial, permite la selección de la muestra con una sola revisión del marco de muestreo.</p>
+<p>Durante muchos años, la teoría de muestreo se centró en la parte de la extracción de muestras aleatorias, más que en la construcción de los estimadores. Con la gran ventaja de los nuevos procesadores, lo anterior pasa a un segundo plano. A continuación se presentan dos métodos de selección de una muestra aleatoria simple de tamaño <span class="math inline">\(n\)</span> de una población de tamaño <span class="math inline">\(N\)</span>. Existen bastantes métodos de selección de una muestra aleatoria sin reemplazo, en esta sección se abordan dos algoritmos de selección. El primero da una asunción más simple, y puede ser comparado con el conocido método de la extracción de una balota; sin embargo, <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que este método es ineficiente computacionalmente. El segundo método basado en un algoritmo secuencial, permite la selección de la muestra con una sola revisión del marco de muestreo.</p>
 <section id="método-coordinado-negativo" class="level4" data-number="3.1.1.1">
 <h4 data-number="3.1.1.1" class="anchored" data-anchor-id="método-coordinado-negativo"><span class="header-section-number">3.1.1.1</span> Método coordinado negativo</h4>
 <!-- index: Algoritmos de selección -->
@@ -509,7 +519,7 @@ Pr(S=s|n(S)=n)&amp;=\frac{Pr(S=s\text{ y }n(S)=n)}{Pr(n(S)=n)}\\
 \end{align*}\]</span> el cual coincide con la expresión (3.2.1).</p>
 </div>
 </div>
-<p>Una consecuencia inmediata del anterior resultado es que otro método de selección de muestras para un diseño de muestreo Bernoulli es escoger aleatoriamente el tamaño de muestra de acuerdo a una distribución binomial <span class="math inline">\(Bin(N,\pi)\)</span> y luego seleccionar una muestra mediante uno de los anteriores algoritmos de selección de muestras aleatorias simples sin reemplazo <span class="citation" data-cites="Til">(<a href="#ref-Til" role="doc-biblioref">Till’e 2006</a>)</span>.</p>
+<p>Una consecuencia inmediata del anterior resultado es que otro método de selección de muestras para un diseño de muestreo Bernoulli es escoger aleatoriamente el tamaño de muestra de acuerdo a una distribución binomial <span class="math inline">\(Bin(N,\pi)\)</span> y luego seleccionar una muestra mediante uno de los anteriores algoritmos de selección de muestras aleatorias simples sin reemplazo <span class="citation" data-cites="Til">(<a href="#ref-Til" role="doc-biblioref">Tillé 2006</a>)</span>.</p>
 </section>
 </section>
 <section id="el-estimador-de-horvitz-thompson" class="level3" data-number="3.1.2">
@@ -688,7 +698,7 @@ A\doteq z_{1-\alpha/2}\frac{CV}{\sqrt{n}}
 n\geq z^2_{1-\alpha/2}\frac{CV^2}{A^2}
 \end{align*}\]</span></p>
 <p>Con un nivel de confianza del <span class="math inline">\(\alpha=5\%\)</span>, asumiendo que el coeficiente de variación estimado converge al coeficiente de variación poblacional y que la fracción de muestreo es despreciable para obtener una precisión <span class="math inline">\(A&lt;3\%\)</span> si a) <span class="math inline">\(CV=0.5\)</span>, el tamaño de muestra debe ser mayor que 1067 unidades; b) <span class="math inline">\(CV=1.0\)</span>, el tamaño de muestra debe ser mayor que 4268 unidades y c) <span class="math inline">\(CV=1.5\)</span>, el tamaño de muestra debe ser mayor que 9604 unidades. Es decir, entre más dispersa sea la población, con respecto a la media, mayor debe ser el tamaño de muestra para conseguir una precisión dada.</p>
-<p>Para poder utilizar las anteriores fórmulas es necesario contar un buen tamaño de muestra, dado que el teorema central del límite clásico (universo infinito) no es el mismo que se ha aplicado aquí. <span class="citation" data-cites="Hajek">H’ajek (<a href="#ref-Hajek" role="doc-biblioref">1960</a>)</span> demuestra que al utilizar muestreo aleatorio simple (universo finito) y bajo ciertas condiciones de regularidad conocidas como las condiciones de Noether y si <span class="math inline">\(n\)</span>, <span class="math inline">\(N\)</span>, y <span class="math inline">\(N-n\)</span> son grandes, es decir la fracción muestral <span class="math inline">\(f=n/N\)</span> se aleja de 0 y de 1, entonces <span class="math display">\[\begin{equation*}
+<p>Para poder utilizar las anteriores fórmulas es necesario contar un buen tamaño de muestra, dado que el teorema central del límite clásico (universo infinito) no es el mismo que se ha aplicado aquí. <span class="citation" data-cites="Hajek">Hájek (<a href="#ref-Hajek" role="doc-biblioref">1960</a>)</span> demuestra que al utilizar muestreo aleatorio simple (universo finito) y bajo ciertas condiciones de regularidad conocidas como las condiciones de Noether y si <span class="math inline">\(n\)</span>, <span class="math inline">\(N\)</span>, y <span class="math inline">\(N-n\)</span> son grandes, es decir la fracción muestral <span class="math inline">\(f=n/N\)</span> se aleja de 0 y de 1, entonces <span class="math display">\[\begin{equation*}
 \frac{\bar{y}_S-\bar{y}_U}{\sqrt{\left(1-\frac{n}{N}\right)}
 \frac{S_{yU}}{\sqrt{n}}}\longrightarrow Normal(0,1)
 \end{equation*}\]</span></p>
@@ -1718,7 +1728,7 @@ p(s)= \begin{cases} \frac{m!}{n_1(s)!\ldots n_N(s)!}\prod_U\left(\frac{1}{N}\rig
 <section id="algoritmo-de-selección-1" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="algoritmo-de-selección-1"><span class="header-section-number">3.3.1</span> Algoritmo de selección</h3>
 <!-- index: Algoritmos de selección -->
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> presenta dos algoritmos para seleccionar una muestra aleatoria simple con reemplazo. El primero, de manera general induce <span class="math inline">\(m\)</span> selecciones individuales y el segundo, es un método secuencial que implementa la selección mediante la distribución binomial.</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> presenta dos algoritmos para seleccionar una muestra aleatoria simple con reemplazo. El primero, de manera general induce <span class="math inline">\(m\)</span> selecciones individuales y el segundo, es un método secuencial que implementa la selección mediante la distribución binomial.</p>
 <section id="método-de-m-selecciones" class="level4" data-number="3.3.1.1">
 <h4 data-number="3.3.1.1" class="anchored" data-anchor-id="método-de-m-selecciones"><span class="header-section-number">3.3.1.1</span> Método de <span class="math inline">\(m\)</span> selecciones</h4>
 <!-- index: Algoritmos de selección -->
@@ -1734,7 +1744,7 @@ p(s)= \begin{cases} \frac{m!}{n_1(s)!\ldots n_N(s)!}\prod_U\left(\frac{1}{N}\rig
 <section id="método-secuencial" class="level4" data-number="3.3.1.2">
 <h4 data-number="3.3.1.2" class="anchored" data-anchor-id="método-secuencial"><span class="header-section-number">3.3.1.2</span> Método secuencial</h4>
 <!-- index: Algoritmo secuencial -->
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que este procedimiento es mejor que el anterior porque permite seleccionar una muestra de tamaño <span class="math inline">\(m\)</span> en una sola pasada por el conjunto de datos.</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que este procedimiento es mejor que el anterior porque permite seleccionar una muestra de tamaño <span class="math inline">\(m\)</span> en una sola pasada por el conjunto de datos.</p>
 <ul>
 <li>Seleccionar <span class="math inline">\(n_k\)</span> veces el elemento <span class="math inline">\(k\)</span>-ésimo de acuerdo a una distribución binomial. <span class="math display">\[\begin{equation}
   Bin\left(m-\sum_{i=1}^{k-1}n_i,\frac{1}{N-k+1}\right)
@@ -2918,6 +2928,10 @@ t_{s_3}=\sum_{s_3}y_k=3574 \ \ \ \ \ \ \ \ \ \ t_{s_7}=\sum_{s_7}y_k=5024
 <ol start="21" type="1">
 <li>Demuestre o refute la siguiente afirmación: &lt;&lt;En un diseño de muestreo sistemático, si hay homogeneidad dentro de los grupos y heterogeneidad entre sus medias, entonces este diseño es menos eficiente que el diseño de muestreo aleatorio simple&gt;&gt;.</li>
 </ol>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -2943,7 +2957,7 @@ Fan, C., M. Muller, y I. Rezucha. 1962. <span>«Development of sampling plans by
 Frankel, M, y B. King. 1996. <span>«A Conversation with Leslie Kish»</span>. <em>Statistical Science</em> 11: 65-87.
 </div>
 <div id="ref-Hajek" class="csl-entry" role="listitem">
-H’ajek, J. 1960. <span>«Limiting distributions in simple random sampling from a finite poulation»</span>. <em>Publication of Mathematical Institute of the Hungarian Academy of Science</em> 5: 361-74.
+Hájek, J. 1960. <span>«Limiting distributions in simple random sampling from a finite population»</span>. <em>Publication of Mathematical Institute of the Hungarian Academy of Science</em> 5: 361-74.
 </div>
 <div id="ref-Har" class="csl-entry" role="listitem">
 Hartley. 1959. <span>«Analytic Studies of Survey Data»</span>. <em>Instituto di Statistica</em> Volume in honor of Corrado Gini.
@@ -2976,7 +2990,7 @@ Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Samp
 Sunter, A. 1977. <span>«List sequential sampling with equal or unequal probabilities without replacement»</span>. <em>Applied Statistics</em> 26: 261-68.
 </div>
 <div id="ref-Til" class="csl-entry" role="listitem">
-Till’e, Y. 2006. <em>Sampling Algorithms</em>. Springer.
+Tillé, Y. 2006. <em>Sampling Algorithms</em>. Springer.
 </div>
 <div id="ref-Wu1" class="csl-entry" role="listitem">
 Wu, C. 2003. <span>«Optimal Calibration Estimators in Survey Sampling»</span>. <em>Biometrika</em> 90: 937-51.
@@ -3546,7 +3560,7 @@ Wu, C. 2003. <span>«Optimal Calibration Estimators in Survey Sampling»</span>.
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -3557,4 +3571,5 @@ Wu, C. 2003. <span>«Optimal Calibration Estimators in Survey Sampling»</span>.
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

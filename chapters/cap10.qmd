@@ -1319,3 +1319,9 @@ $$
 1. Los estimadores de calibración inducidos por la distancia Ji-cuadrado coinciden plenamente con los estimadores de regresión general.
 1. La cantidad $q_k$ es constante para todos los individuos bajo la distancia de entropía.
 1. Bajo la distancia Ji-cuadrado inversa, al minimizar la distancia con respecto a las restricciones de calibración, siempre se llega a que los pesos $w_k$ son iguales al inverso de la probabilidad de inclusión del $k$-ésimo elemento.
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

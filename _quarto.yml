@@ -5,13 +5,19 @@ project:
     - .nojekyll
 
 book:
-  title: "Estrategias de Muestreo"
+  title: "<span style='font-weight: 700'>Estrategias</span><br/><i style='color: #00b7ff'>de Muestreo</i>"
   subtitle: "Diseño de Encuestas y Estimación de Parámetros"
   author: "Andrés Gutiérrez"
+  search: true
+  page-navigation: true
+  sidebar:
+    style: floating
+    collapse-level: 1
   date: today
   date-format: long
   chapters:
     - index.qmd
+    - chapters/frontmatter.qmd
     - chapters/cap1.qmd
     - chapters/cap2.qmd
     - chapters/cap3.qmd
@@ -27,7 +33,7 @@ book:
     - chapters/cap13.qmd
     - chapters/cap14.qmd
     - chapters/cap15.qmd
-  page-footer: "Estrategias de muestreo"
+  page-footer: "Estrategias de muestreo: diseño de encuestas y estimación de parámetros"
 
 bibliography: references.bib
 lang: es
@@ -46,6 +52,8 @@ format:
     include-after-body: scripts/number-callouts.html
     toc: true
     toc-depth: 3
+    toc-location: right
+    smooth-scroll: true
     number-sections: true
     code-fold: false
 

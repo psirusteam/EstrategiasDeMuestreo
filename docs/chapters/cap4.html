@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Muestras con probabilidades proporcionales – Estrategias de Muestreo</title>
+<title>4&nbsp; Muestras con probabilidades proporcionales – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -126,6 +126,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -199,7 +200,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -212,6 +213,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -337,7 +344,10 @@ window.Quarto = {
   <li><a href="#estimación-de-la-varianza" id="toc-estimación-de-la-varianza" class="nav-link" data-scroll-target="#estimación-de-la-varianza"><span class="header-section-number">4.4.3</span> Estimación de la varianza</a></li>
   <li><a href="#marco-y-lucy-2" id="toc-marco-y-lucy-2" class="nav-link" data-scroll-target="#marco-y-lucy-2"><span class="header-section-number">4.4.4</span> Marco y Lucy</a></li>
   </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">4.5</span> Ejercicios</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">4.5</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1564,8 +1574,8 @@ D&amp;=\sum_{k\in U}\frac{x_k(T_N-x_k)}{T_N(T_N-2x_k)}\\
 <section id="método-de-escisión" class="level3" data-number="4.4.2">
 <h3 data-number="4.4.2" class="anchored" data-anchor-id="método-de-escisión"><span class="header-section-number">4.4.2</span> Método de escisión</h3>
 <!-- index: Algoritmo de escisión -->
-<p>Desde la publicación de <span class="citation" data-cites="BH">Brewer y Hanif (<a href="#ref-BH" role="doc-biblioref">1983</a>)</span> se han propuesto numerosas técnicas de muestreo con probabilidades de inclusión desiguales. Sin embargo, en el artículo de <span class="citation" data-cites="DT98">Deville y Till’e (<a href="#ref-DT98" role="doc-biblioref">1998</a>)</span>, se habla de ocho nuevos métodos; entre ellos, el método de escisión. Este método es considerado como un nuevo enfoque que presenta de manera más simple los restantes métodos de selección de muestras con probabilidades desiguales. <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> comenta que el método de escisión es un medio para integrar la presentación de los demás métodos y para hacerlos comparables.</p>
-<p>En palabras de uno de los autores <span class="citation" data-cites="Til">(<a href="#ref-Til" role="doc-biblioref">Till’e 2006</a>)</span>, el método de escisión propuesto por <span class="citation" data-cites="DT98">Deville y Till’e (<a href="#ref-DT98" role="doc-biblioref">1998</a>)</span> es:</p>
+<p>Desde la publicación de <span class="citation" data-cites="BH">Brewer y Hanif (<a href="#ref-BH" role="doc-biblioref">1983</a>)</span> se han propuesto numerosas técnicas de muestreo con probabilidades de inclusión desiguales. Sin embargo, en el artículo de <span class="citation" data-cites="DT98">Deville y Tillé (<a href="#ref-DT98" role="doc-biblioref">1998</a>)</span>, se habla de ocho nuevos métodos; entre ellos, el método de escisión. Este método es considerado como un nuevo enfoque que presenta de manera más simple los restantes métodos de selección de muestras con probabilidades desiguales. <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> comenta que el método de escisión es un medio para integrar la presentación de los demás métodos y para hacerlos comparables.</p>
+<p>En palabras de uno de los autores <span class="citation" data-cites="Til">(<a href="#ref-Til" role="doc-biblioref">Tillé 2006</a>)</span>, el método de escisión propuesto por <span class="citation" data-cites="DT98">Deville y Tillé (<a href="#ref-DT98" role="doc-biblioref">1998</a>)</span> es:</p>
 <div class="blockquote">
 <p>…un marco de referencia de los métodos de muestreo sin reemplazo, con tamaño muestral fijo y con probabilidades desiguales, en particular con probabilidades proporcionales al tamaño de una característica de información auxiliar.</p>
 <p>La idea básica del método consiste en dividir el vector de probabilidades de inclusión en dos o más vectores nuevos. A continuación, uno de estos vectores se selecciona aleatoriamente, de tal manera que el promedio de los vectores de como resultado el vector de probabilidades de inclusión. Este simple paso se repite hasta que se obtenga una muestra.</p>
@@ -1823,8 +1833,8 @@ p(s)=
 <h3 data-number="4.4.3" class="anchored" data-anchor-id="estimación-de-la-varianza"><span class="header-section-number">4.4.3</span> Estimación de la varianza</h3>
 <!-- index: Estimación de la varianza -->
 <p>Existe un número muy grande de diseños y algoritmos de muestreo que trabajan bajo el supuesto de probabilidades de inclusión desiguales. En el caso particular del diseño de muestreo sin reemplazo y proporcional al tamaño de una característica de interés, las probabilidades de inclusión siguen el comportamiento dado por la expresión (4.3.1). Cada uno de estos métodos de muestreo inducen probabilidades de inclusión de primer y segundo orden. Las probabilidades de inclusión de primer orden son esenciales al momento de completar la estrategia de muestreo con el estimador de Horvitz-Thompson. Sin embargo, las probabilidades de inclusión de segundo orden, aunque servirían teóricamente para calcular y estimar la varianza del estimador de Horvitz-Thompson, son ineficientes pues cuando el tamaño de muestra crece, su cálculo se vuelve una total aventura, en muchos casos imposible de finiquitar.</p>
-<p>Al respecto <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> comenta, en el prefacio de su libro de algoritmos de muestreo, que &lt;<tiene la="" convicción="" de="" que="" las="" probabilidades="" inclusión="" segundo="" orden="" no="" son="" usadas="" para="" nada="">&gt; y añade que &lt;&lt;en la práctica el uso de las probabilidades de inclusión de segundo orden es muchas veces irreal porque son muy difíciles de calcular computacionalmente y <span class="math inline">\(n^2\)</span> términos deben ser sumados para calcular la estimación&gt;&gt;.</tiene></p>
-<p>Para evitar el cálculo y estimación de la varianza del estimador de Horvitz-Thompson con dobles sumas, <span class="citation" data-cites="DT05">Deville y Till’e (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span> proponen una aproximación de la varianza<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> y su respectiva estimación para un diseño exponencial<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> dada por el siguiente resultado</p>
+<p>Al respecto <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> comenta, en el prefacio de su libro de algoritmos de muestreo, que &lt;<tiene la="" convicción="" de="" que="" las="" probabilidades="" inclusión="" segundo="" orden="" no="" son="" usadas="" para="" nada="">&gt; y añade que &lt;&lt;en la práctica el uso de las probabilidades de inclusión de segundo orden es muchas veces irreal porque son muy difíciles de calcular computacionalmente y <span class="math inline">\(n^2\)</span> términos deben ser sumados para calcular la estimación&gt;&gt;.</tiene></p>
+<p>Para evitar el cálculo y estimación de la varianza del estimador de Horvitz-Thompson con dobles sumas, <span class="citation" data-cites="DT05">Deville y Tillé (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span> proponen una aproximación de la varianza<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> y su respectiva estimación para un diseño exponencial<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> dada por el siguiente resultado</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Resultado">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1839,7 +1849,7 @@ p(s)=
 Var(\hat{t}_{y,\pi})=\sum_{k\in U} \frac{b_k}{\pi_k^2}(y_k-y_k^*)^2
 \]</span> donde <span class="math display">\[
 y_k^*=\pi_k\dfrac{\sum_{l\in U}b_ly_l/\pi_l}{\sum_{l\in U}b_l}
-\]</span> <span class="citation" data-cites="HajBook">H’ajek (<a href="#ref-HajBook" role="doc-biblioref">1981</a>)</span> ha propuesto la siguiente escogencia de <span class="math inline">\(b_k\)</span> <span class="math display">\[
+\]</span> <span class="citation" data-cites="HajBook">Hájek (<a href="#ref-HajBook" role="doc-biblioref">1981</a>)</span> ha propuesto la siguiente escogencia de <span class="math inline">\(b_k\)</span> <span class="math display">\[
 b_k=\dfrac{N\pi_k (1-\pi_k)}{(N-1)}
 \]</span> Un estimador de la anterior aproximación de la varianza está dada por <span class="math display">\[
 \widehat{Var}(\hat{t}_{y,\pi})=\sum_{k\in S} \frac{c_k}{\pi_k^2}(y_k-\hat{y}_k^*)^2
@@ -2069,23 +2079,27 @@ Taxes       989449</code></pre>
 <li><p>Suponga una población de <span class="math inline">\(N=12\)</span> elementos cuyos valores observados para la característica de interés son <span class="math display">\[{y}=\{50, 53, 44, 45, 53, 31, 35, 45, 34, 44, 52, 52\}\]</span></p></li>
 </ul>
 <p>y los valores observados para la característica de información auxiliar son <span class="math display">\[{x}=\{1005, 1072,  884,  907, 1068,  625,  705,  909, 692,  891, 1046, 1052\}\]</span> - Calcule la correlación entre <span class="math inline">\(y^2/x\)</span> y <span class="math inline">\(x\)</span>. - Realice un gráfico de dispersión para <code>y/x</code> y explique si se puede afirmar que la razón es constante para los elementos de la población. - Utilice el análisis de regresión simple para estimar el valor del intercepto y decida si este es estadísticamente diferente de cero. - Para un tamaño de muestra <span class="math inline">\(m=6\)</span>, utilice la expresión (4.2.13) y los anteriores argumentos para justificar o descalificar la escogencia del diseño de muestreo PPT para esta población. - Asumiendo que los datos del ejercicio 4.5 provienen de un diseño de muestreo PPT, calcule la estimación de Hansen-Hurwitz para el total de la característica de interés, reporte el coeficiente de variación estimado y un intervalo de confianza al 95%. También calcule la estimación de Horvitz-Thompson para el total de la característica de interés.</p>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-Baut" class="csl-entry" role="listitem">
 Bautista, J. L. 1998. <em>Diseños de muestreo estad’istico</em>. Universidad Nacional de Colombia.
 </div>
+<div id="ref-Brew63a" class="csl-entry" role="listitem">
+Brewer, K. R. W. 1963. <span>«A model of systematic sampling with unequal probabilities»</span>. <em>Australina Journal of Statistics</em> 5: 93-105.
+</div>
+<div id="ref-Brew75" class="csl-entry" role="listitem">
+Brewer, K. R. W. 1975. <span>«A simple procedure for <span class="math inline">\(\pi\)</span>pswor»</span>. <em>Australian Journal of Statistics</em> 17: 166-72.
+</div>
 <div id="ref-Brew" class="csl-entry" role="listitem">
 Brewer, K. R. W. 2002. <em>Combined sampling inference, weighting Basu’s elephants</em>. London: Arnorld.
 </div>
 <div id="ref-BH" class="csl-entry" role="listitem">
 Brewer, K. R. W., y M. Hanif. 1983. <em>Sampling with unequal probabilities</em>. New York: Springer-Verlag.
-</div>
-<div id="ref-Brew63a" class="csl-entry" role="listitem">
-Brewer, K. W. R. 1963. <span>«A model of systematic sampling with unequal probabilities»</span>. <em>Australina Journal of Statistics</em> 5: 93-105.
-</div>
-<div id="ref-Brew75" class="csl-entry" role="listitem">
-Brewer, K. W. R. 1975. <span>«A simple procedure for <span class="math inline">\(\pi\)</span>pswor»</span>. <em>Australian Journal of Statistics</em> 17: 166-72.
 </div>
 <div id="ref-CSW1" class="csl-entry" role="listitem">
 Cassel, C. M., C. E. Särndal, y J. Wretman. 1976. <span>«Some results on generalized difference estimation and generalized regression estimation for finite populations»</span>. <em>Biometrika</em> 63: 615-20.
@@ -2094,16 +2108,16 @@ Cassel, C. M., C. E. Särndal, y J. Wretman. 1976. <span>«Some results on gener
 Deville, J. C. 1993. <span>«Estimation de la Variance Pour les Enquetes en Deux Phases»</span>. <em>Note Interne Manuscrite. France: INSEE</em>.
 </div>
 <div id="ref-DT98" class="csl-entry" role="listitem">
-Deville, J.-C, y Y. Till’e. 1998. <span>«Unequal probability sampling without replacement through a splitting method»</span>. <em>Biometrika</em> 85: 89-101.
+Deville, J.-C, y Y. Tillé. 1998. <span>«Unequal probability sampling without replacement through a splitting method»</span>. <em>Biometrika</em> 85: 89-101.
 </div>
 <div id="ref-DT05" class="csl-entry" role="listitem">
-Deville, J.-C, y Y. Till’e. 2005. <span>«Variance approximation under balanced sampling»</span>. <em>Journal of Statistical Planning and Inference</em> 128: 411-25.
+Deville, J.-C, y Y. Tillé. 2005. <span>«Variance approximation under balanced sampling»</span>. <em>Journal of Statistical Planning and Inference</em> 128: 411-25.
 </div>
 <div id="ref-HajBook" class="csl-entry" role="listitem">
-H’ajek, J. 1981. <em>Sampling from a finite population</em>. New York: Marcel Dekker.
+Hájek, J. 1981. <em>Sampling from a finite population</em>. New York: Marcel Dekker.
 </div>
 <div id="ref-Han43" class="csl-entry" role="listitem">
-Hansen, H. M., y W. N. Hurwitz. 1943. <span>«On the theory of sampling from finite populations»</span>. <em>Annals of Mathemathical Statistics</em> 14: 333-62.
+Hansen, M. H., y W. N. Hurwitz. 1943. <span>«On the theory of sampling from finite populations»</span>. <em>Annals of Mathemathical Statistics</em> 14: 333-62.
 </div>
 <div id="ref-Han" class="csl-entry" role="listitem">
 Hansen, M. H., W. N. Hurwitz, y G. Madow W. 1953. <em>Sample survey methods and theory. Vols. I and II</em>. John Wiley; Sons.
@@ -2118,7 +2132,7 @@ Lehtonen, R., y E. J. Pahkinen. 2003. <em>Practial methods for design and analys
 Lohr, S. 2000. <em>Sampling: Design and Analysis</em>. Thompson.
 </div>
 <div id="ref-MT05" class="csl-entry" role="listitem">
-Matei, A., y Y. Tille. 2005. <span>«Evaluation of Variance Approximations and Estimators in Maximun Entropy Sampling with Unequal Probability and Fixed Sample Size»</span>. <em>Journal of Official Statistics.</em> 4: 543-70.
+Matei, A., y Y. Tillé. 2005. <span>«Evaluation of Variance Approximations and Estimators in Maximum Entropy Sampling with Unequal Probability and Fixed Sample Size»</span>. <em>Journal of Official Statistics.</em> 4: 543-70.
 </div>
 <div id="ref-Raj54" class="csl-entry" role="listitem">
 Raj, D. 1954. <span>«On sampling with probabilities proportional to size»</span>. <em>Ganita</em> 5: 175-82.
@@ -2136,7 +2150,7 @@ Sunter, A. 1977. <span>«List sequential sampling with equal or unequal probabil
 Sunter, A. 1986. <span>«Solutions to the problem of unequal probabilities sampling without replacement»</span>. <em>International Statitical Review</em> 54: 33-50.
 </div>
 <div id="ref-Til" class="csl-entry" role="listitem">
-Till’e, Y. 2006. <em>Sampling Algorithms</em>. Springer.
+Tillé, Y. 2006. <em>Sampling Algorithms</em>. Springer.
 </div>
 </div>
 </section>
@@ -2145,10 +2159,10 @@ Till’e, Y. 2006. <em>Sampling Algorithms</em>. Springer.
 <ol>
 <li id="fn1"><p>El requisito indispensable de la información auxiliar es que sea aproximadamente proporcional a la característica de interés.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Nótese que la sigla <span class="math inline">\(\pi\)</span>PT se refiere a los diseños de muestreo que inducen probabilidades de inclusión proporcionales a una característica de información auxiliar.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>El lector interesado en conocer aún más acerca de estos algoritmos de selección puede referirse a los siguientes tres libros: <span class="citation" data-cites="BH">Brewer y Hanif (<a href="#ref-BH" role="doc-biblioref">1983</a>)</span>, <span class="citation" data-cites="HajBook">H’ajek (<a href="#ref-HajBook" role="doc-biblioref">1981</a>)</span> y <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span>).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>El lector interesado en conocer aún más acerca de estos algoritmos de selección puede referirse a los siguientes tres libros: <span class="citation" data-cites="BH">Brewer y Hanif (<a href="#ref-BH" role="doc-biblioref">1983</a>)</span>, <span class="citation" data-cites="HajBook">Hájek (<a href="#ref-HajBook" role="doc-biblioref">1981</a>)</span> y <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span>).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Una muestra es seleccionada cuando todas las entradas del vector de probabilidades de inclusión se conviertan en ceros o unos.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Existe mucha literatura escrita alrededor del tema de aproximaciones y simplificaciones de la varianza del estimador de Horvitz-Thompson. Para una mejor comprensión del tema <span class="citation" data-cites="MT05">Matei y Tille (<a href="#ref-MT05" role="doc-biblioref">2005</a>)</span> han escrito un excelente artículo de revisión.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Los diseños de muestreo exponenciales son una gran familia que incluyen diseños tales como muestreo aleatorio simple, muestreo multinomial, muestreo de probabilidades desiguales con reemplazo y algunos diseños de probabilidades desiguales sin reemplazo. Para más información acerca de los diseños de muestreo exponenciales el lector deberá remitirse a <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Existe mucha literatura escrita alrededor del tema de aproximaciones y simplificaciones de la varianza del estimador de Horvitz-Thompson. Para una mejor comprensión del tema <span class="citation" data-cites="MT05">Matei y Tillé (<a href="#ref-MT05" role="doc-biblioref">2005</a>)</span> han escrito un excelente artículo de revisión.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Los diseños de muestreo exponenciales son una gran familia que incluyen diseños tales como muestreo aleatorio simple, muestreo multinomial, muestreo de probabilidades desiguales con reemplazo y algunos diseños de probabilidades desiguales sin reemplazo. Para más información acerca de los diseños de muestreo exponenciales el lector deberá remitirse a <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span>.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -2714,7 +2728,7 @@ Till’e, Y. 2006. <em>Sampling Algorithms</em>. Springer.
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -2725,4 +2739,5 @@ Till’e, Y. 2006. <em>Sampling Algorithms</em>. Springer.
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

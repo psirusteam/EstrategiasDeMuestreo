@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>14&nbsp; Encuestas multi-propósito – Estrategias de Muestreo</title>
+<title>14&nbsp; Encuestas multi-propósito – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -126,6 +126,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -199,7 +200,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -212,6 +213,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -334,7 +341,10 @@ window.Quarto = {
   <li><a href="#un-ejemplo-numérico" id="toc-un-ejemplo-numérico" class="nav-link" data-scroll-target="#un-ejemplo-numérico"><span class="header-section-number">14.5.2</span> Un ejemplo numérico</a></li>
   </ul></li>
   <li><a href="#marco-y-lucy" id="toc-marco-y-lucy" class="nav-link" data-scroll-target="#marco-y-lucy"><span class="header-section-number">14.6</span> Marco y Lucy</a></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">14.7</span> Ejercicios</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">14.7</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1123,7 +1133,7 @@ Y3 814446</code></pre>
 <section id="marco-y-lucy" class="level2" data-number="14.6">
 <h2 data-number="14.6" class="anchored" data-anchor-id="marco-y-lucy"><span class="header-section-number">14.6</span> Marco y Lucy</h2>
 <!-- index: Marco y Lucy -->
-<p>Al momento de planear una encuesta, la forma tradicional se enfoca en una sola variable de interés, la cual es insuficiente para aquel estadístico que debe responder por la estimación de varios parámetros de interés. En este capítulo, e indirectamente a lo largo de todo el libro, se planteó un enfoque útil para la estimación simultanea de varios parámetros de interés. Además de las ventajas computacionales, este enfoque matricial sirve como vehículo para la introducción de tópicos de muestreo avanzados como el sistema general de ponderación propuesto por <span class="citation" data-cites="Lav">Lavallé y Caron (<a href="#ref-Lav" role="doc-biblioref">2008</a>)</span>.</p>
+<p>Al momento de planear una encuesta, la forma tradicional se enfoca en una sola variable de interés, la cual es insuficiente para aquel estadístico que debe responder por la estimación de varios parámetros de interés. En este capítulo, e indirectamente a lo largo de todo el libro, se planteó un enfoque útil para la estimación simultanea de varios parámetros de interés. Además de las ventajas computacionales, este enfoque matricial sirve como vehículo para la introducción de tópicos de muestreo avanzados como el sistema general de ponderación propuesto por <span class="citation" data-cites="Lav">Lavallée y Caron (<a href="#ref-Lav" role="doc-biblioref">2008</a>)</span>.</p>
 <p>Por supuesto, este capítulo cierra con Marco y Lucy que, indirectamente a lo largo de todo el libro, han demostrado que el enfoque matricial de estimación simultanea debe ser usado por el estadístico teórico y práctico. Suponga que el marco de muestreo tiene la cualidad de proporcionar, además de la identificación y ubicación de cada empresa, una característica de información auxiliar como el Ingreso de cada empresa. En este orden de ideas, el lector, que ha seguido una lectura directa del libro hasta esta etapa, sabrá que el tamaño de la población es <span class="math inline">\(N=2396\)</span> y que se han obtenido excelentes resultados con diseños de muestreo proporcionales al tamaño del Ingreso de la empresa para las características de interés Empleados e Ingreso. Además, estos buenos resultados se han obtenido con un tamaño de muestra <span class="math inline">\(n=2000\)</span>.</p>
 <p>Por otra parte, suponga que la relación entre la característica de información auxiliar Ingreso es lineal para la característica de interés Empleados pero cuadrática para la característica de interés Impuestos. Estas características se deben definir en el entorno computacional, determinando así las cantidades <span class="math inline">\(\sigma_{qk}\)</span> de la expresión (13.5.1), de la siguiente manera.</p>
 <div class="cell">
@@ -1239,6 +1249,10 @@ Cov_S(y,x)=\frac{1}{n-1}\sum_S(y_k-\bar{y}_S)(x_k-\bar{x}_S)
 <li><p>Obtenga una expresión para las probabilidades de inclusión de Holmberg cuando todas las medidas de tamaño son constantes en un estudio multipropósito.</p></li>
 <li><p>Demuestre la expresión (13.3.13)</p></li>
 </ol>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -1258,7 +1272,7 @@ Holmberg, A. 2002a. <span>«A Multiparameter Perspective on the Choice of Sampli
 Holmberg, A. 2002b. <em>On the Choice of Sampling Design under GREG Estimation in Multiparameter Surveys</em>. No. 1. <em>RD Department, Statistics Sweden</em>.
 </div>
 <div id="ref-Lav" class="csl-entry" role="listitem">
-Lavallé, P., y P. Caron. 2008. <span>«Estimation Using the Generalized Weigth Share Method: The Use of Record Linkage»</span>. <em>Survey Methodology</em> 27: 155-69.
+Lavallée, P., y P. Caron. 2008. <span>«Estimation Using the Generalized Weight Share Method: The Use of Record Linkage»</span>. <em>Survey Methodology</em> 27: 155-69.
 </div>
 <div id="ref-Sar" class="csl-entry" role="listitem">
 Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Sampling</em>. Springer, New York.
@@ -1837,7 +1851,7 @@ Smith, T. M. F. 1976. <span>«The Foundations of Survey Sampling: a Review (with
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -1848,4 +1862,5 @@ Smith, T. M. F. 1976. <span>«The Foundations of Survey Sampling: a Review (with
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

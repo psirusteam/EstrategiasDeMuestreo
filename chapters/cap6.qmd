@@ -838,3 +838,9 @@ La regla de oro se mantiene, una estrategia de muestreo es eficiente si las prob
 - Estime el número de hogares en el barrio. Reporte el coeficiente de variación estimado.
 - Asumiendo que en el barrio hay $N=2000$ hogares, estime el ingreso medio de los hogares en el barrio. Reporte el coeficiente de variación estimado.
 - Estime el ingreso medio utilizando el estimador de Hájek. Explique la diferencia con respecto a la estimación del punto anterior.
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

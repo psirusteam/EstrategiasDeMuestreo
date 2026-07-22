@@ -1140,3 +1140,9 @@ Dada la simplificación en el cálculo de la varianza, @Baut propone utilizarla 
 - ¿Es una buena estrategia escoger al estimador $\bar{y}_S$ para inferir acerca del promedio de patas de los perros en la ciudad?
 
 % --------------------------------------------------------------------------------
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

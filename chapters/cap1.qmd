@@ -394,3 +394,9 @@ Pequeño&Ingreso&620&175.186&283&956&268.974&281\\
 \end{tabular}
 }
 \end{table}
+
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>15&nbsp; Inferencia basada en modelos poblacionales – Estrategias de Muestreo</title>
+<title>15&nbsp; Inferencia basada en modelos poblacionales – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -90,6 +90,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -163,7 +164,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -176,6 +177,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -296,7 +303,10 @@ window.Quarto = {
   <li><a href="#el-teorema-general-de-predicción" id="toc-el-teorema-general-de-predicción" class="nav-link" data-scroll-target="#el-teorema-general-de-predicción"><span class="header-section-number">15.3</span> El teorema general de predicción</a></li>
   <li><a href="#ignorando-el-diseño-de-muestreo" id="toc-ignorando-el-diseño-de-muestreo" class="nav-link" data-scroll-target="#ignorando-el-diseño-de-muestreo"><span class="header-section-number">15.4</span> Ignorando el diseño de muestreo</a></li>
   <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">15.5</span> Ejercicios</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -329,7 +339,7 @@ window.Quarto = {
 <section id="un-poco-de-historia" class="level2" data-number="15.1">
 <h2 data-number="15.1" class="anchored" data-anchor-id="un-poco-de-historia"><span class="header-section-number">15.1</span> Un poco de historia</h2>
 <!-- index: Inferencia basada en el modelo -->
-<p>Según <span class="citation" data-cites="Rao05">Rao (<a href="#ref-Rao05" role="doc-biblioref">2005</a>)</span>, el primer personaje interesado en el método representativo (más adelante conocido como teoría de muestreo) fue el estadístico noruego <span class="citation" data-cites="Kiaer1901">Kiaer (<a href="#ref-Kiaer1901" role="doc-biblioref">1901</a>)</span> puesto que demostró empíricamente que seleccionando muestras estratificadas se obtienen mejores resultados en los estimativos de medias y totales. Más adelante, <span class="citation" data-cites="Bowley1906">Bowley (<a href="#ref-Bowley1906" role="doc-biblioref">1906</a>)</span> utiliza aproximaciones a la distribución normal para la estimación de proporciones y propone la fórmula de la estimación de la varianza para diseños de muestreo estratificados. Para la década de 1920, el método representativo era usado de manera difundida en Estados Unidos y alrededor del mundo. Fue así como en 1924, el ISI (Instituto Internacional de Estadística, por su traducción del inglés al español) crea una comisión de discusión de este método. Los resultados de este comité incluyen el trabajo de <span class="citation" data-cites="Bowley1926">Bowley (<a href="#ref-Bowley1926" role="doc-biblioref">1926</a>)</span> basado en métodos de selección representativos con probabilidades de inclusión iguales. Con estos avances teóricos y con la publicación de tablas de números aleatorios por <span class="citation" data-cites="Tippett1927">Tippett (<a href="#ref-Tippett1927" role="doc-biblioref">1927</a>)</span> se facilitó la selección de muestras probabilísticas. En ese mismo año, <span class="citation" data-cites="Hu1927">Hubback (<a href="#ref-Hu1927" role="doc-biblioref">1927</a>)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> reconoce la necesidad de utilizar este enfoque en los estudios agrícolas puesto que:</p>
+<p>Según <span class="citation" data-cites="Rao05">Rao (<a href="#ref-Rao05" role="doc-biblioref">2005</a>)</span>, el primer personaje interesado en el método representativo (más adelante conocido como teoría de muestreo) fue el estadístico noruego <span class="citation" data-cites="Kiaer1901">Kiær (<a href="#ref-Kiaer1901" role="doc-biblioref">1901</a>)</span> puesto que demostró empíricamente que seleccionando muestras estratificadas se obtienen mejores resultados en los estimativos de medias y totales. Más adelante, <span class="citation" data-cites="Bowley1906">Bowley (<a href="#ref-Bowley1906" role="doc-biblioref">1906</a>)</span> utiliza aproximaciones a la distribución normal para la estimación de proporciones y propone la fórmula de la estimación de la varianza para diseños de muestreo estratificados. Para la década de 1920, el método representativo era usado de manera difundida en Estados Unidos y alrededor del mundo. Fue así como en 1924, el ISI (Instituto Internacional de Estadística, por su traducción del inglés al español) crea una comisión de discusión de este método. Los resultados de este comité incluyen el trabajo de <span class="citation" data-cites="Bowley1926">Bowley (<a href="#ref-Bowley1926" role="doc-biblioref">1926</a>)</span> basado en métodos de selección representativos con probabilidades de inclusión iguales. Con estos avances teóricos y con la publicación de tablas de números aleatorios por <span class="citation" data-cites="Tippett1927">Tippett (<a href="#ref-Tippett1927" role="doc-biblioref">1927</a>)</span> se facilitó la selección de muestras probabilísticas. En ese mismo año, <span class="citation" data-cites="Hu1927">Hubback (<a href="#ref-Hu1927" role="doc-biblioref">1927</a>)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> reconoce la necesidad de utilizar este enfoque en los estudios agrícolas puesto que:</p>
 <ol type="1">
 <li>Evita los posibles sesgos personales.</li>
 <li>Es posible determinar un tamaño de muestra tal que satisfaga un margen de error determinado por el investigador.</li>
@@ -438,7 +448,7 @@ T_y=\sum_{k\in s} Y_k+\sum_{k\notin s} Y_k,
 <p>donde <span class="math inline">\(\hat{E}_{\xi}(Y_k)\)</span> es una estimación de <span class="math inline">\(E_{\xi}(Y_k)\)</span> realizada con los datos obtenidos de la muestra seleccionada <span class="math inline">\(s\)</span>.</p>
 </div>
 </div>
-<p><span class="citation" data-cites="GodTho77">Godambe y Thompson (<a href="#ref-GodTho77" role="doc-biblioref">1977</a>)</span> sugirieron, en el curso de una discusión en el congreso internacional de estadística en Nueva Delhi, que se debía buscar una manera de encontrar estimadores que tuvieran sentido en ambos tipos de inferencia. Más adelante, <span class="citation" data-cites="SarWri84">Sarndal y Wright (<a href="#ref-SarWri84" role="doc-biblioref">1984</a>)</span> y <span class="citation" data-cites="Brew99">Brewer (<a href="#ref-Brew99" role="doc-biblioref">1999</a>)</span> llevaron a cabo la implementación de esta sugerencia.</p>
+<p><span class="citation" data-cites="GodTho77">Godambe y Thompson (<a href="#ref-GodTho77" role="doc-biblioref">1977</a>)</span> sugirieron, en el curso de una discusión en el congreso internacional de estadística en Nueva Delhi, que se debía buscar una manera de encontrar estimadores que tuvieran sentido en ambos tipos de inferencia. Más adelante, <span class="citation" data-cites="SarWri84">Särndal y Wright (<a href="#ref-SarWri84" role="doc-biblioref">1984</a>)</span> y <span class="citation" data-cites="Brew99">Brewer (<a href="#ref-Brew99" role="doc-biblioref">1999</a>)</span> llevaron a cabo la implementación de esta sugerencia.</p>
 <p>Aunque el tipo de inferencia dominante después de la segunda guerra mundial fue la inferencia basada en el diseño de muestreo, a comienzos de los años setenta, Richard Royall, con la ayuda de muchos co-autores, cambiaron rotundamente esa tendencia con gran determinación. Él afirmó que la inferencia basada en el diseño, aunque no hace supuestos acerca de las probabilidades y parece ser no paramétrica y robusta, estaba sujeta a importantes defectos. Algunas de las limitaciones que cita <span class="citation" data-cites="Royall71">Royall (<a href="#ref-Royall71" role="doc-biblioref">1971</a>)</span> son:</p>
 <ul>
 <li>Las sorprendentes complicaciones encontradas en el estudio y ejecución de los diseños de probabilidad proporcional al tamaño y</li>
@@ -451,7 +461,7 @@ T_y=\sum_{k\in s} Y_k+\sum_{k\notin s} Y_k,
 <p>La inferencia inversa procede de lo particular a lo general, la inferencia directa de lo general a lo particular.</p>
 <p>Desde este punto de vista, la inferencia basada en el diseño de muestreo es inversa y la inferencia basada en modelos predictivos es directa. Nótese que la inferencia bayesiana también pertenece al grupo de las inferencias inversas. <span class="citation" data-cites="Brew99">Brewer (<a href="#ref-Brew99" role="doc-biblioref">1999</a>)</span> argumenta que:</p>
 <p>En esta época, la tendencia es usar la inferencia basada en el diseño para la estimación en grandes dominios y muestreo sintético (inferencia basada en modelos) para la estimación en dominios pequeños dentro del mismo estudio.</p>
-<p>También hace alusión al uso de los estimadores de calibración cosméticos que combinan los dos tipos de inferencias simultáneamente. La idea de los estimadores cosméticos nace con <span class="citation" data-cites="SarWri84">Sarndal y Wright (<a href="#ref-SarWri84" role="doc-biblioref">1984</a>)</span> y el argumento para utilizar esa palabra es el hecho de que un estimador pueda ser visto o interpretado como un predictor obtenido de una regresión lo hace muy atractivo.</p>
+<p>También hace alusión al uso de los estimadores de calibración cosméticos que combinan los dos tipos de inferencias simultáneamente. La idea de los estimadores cosméticos nace con <span class="citation" data-cites="SarWri84">Särndal y Wright (<a href="#ref-SarWri84" role="doc-biblioref">1984</a>)</span> y el argumento para utilizar esa palabra es el hecho de que un estimador pueda ser visto o interpretado como un predictor obtenido de una regresión lo hace muy atractivo.</p>
 <p>Finalmente, desde la aparición del clásico libro de muestreo de <span class="citation" data-cites="Sar">Särndal et&nbsp;al. (<a href="#ref-Sar" role="doc-biblioref">1992</a>)</span>, la historia de la inferencia en poblaciones finitas ha tomado otro matiz, definiendo no solamente al blanco y el negro sino que también una especie arco iris entre estas dos corrientes del pensamiento inferencial. <span class="citation" data-cites="IF">Isaki y Fuller (<a href="#ref-IF" role="doc-biblioref">1982</a>)</span> plantean el problema de tener en cuenta la forma de selección de la muestra y a la vez el modelo de relación <span class="math inline">\(\xi\)</span> entre la característica de interés y la información auxiliar, pero es en <span class="citation" data-cites="CSW1">Cassel et&nbsp;al. (<a href="#ref-CSW1" role="doc-biblioref">1976</a>)</span> que se acuña un término muy polémico, la <strong>inferencia asistida por un modelo y basada en el diseño</strong> (model assisted design based, en el inglés original). Es decir, la base de la inferencia es el diseño de muestreo, pero la estrategia de muestreo es complementada teniendo en cuenta un <span class="math inline">\(\xi\)</span> modelo en la estimación del parámetro de interés.</p>
 <p>Para terminar el repaso por la historia, en <span class="citation" data-cites="Brew">Brewer (<a href="#ref-Brew" role="doc-biblioref">2002</a>)</span> se presenta el siguiente diálogo entre dos estadísticos, llamados E y L, que utilizan enfoque de inferencia en poblaciones finitas distintos. Uno utiliza la inferencia basada en modelos predictivos, que utiliza los datos de la muestra para construir un modelo que permita predecir los valores no observados en la muestra y así llegar a una estimación de las cantidades de interés y que no utiliza las probabilidades de inclusión. Y otro que utiliza la inferencia basada en el diseño de muestreo. Cada uno acérrimo defensor de su punto de vista.</p>
 <p>E: Creo que usted sigue viviendo en los ochenta. No tenga la menor duda de que las cosas han cambiado un poco. Muchos estadísticos académicos están a favor de la inferencia basada en modelos predictivos.</p>
@@ -1202,7 +1212,7 @@ f_{\mathbf{I},\mathbf{Y}_s|\mathbf{X}}(\mathbf{I},\mathbf{Y}_s|\mathbf{X};\bolds
 =f_{\mathbf{Y}_s|\mathbf{X}}(\mathbf{Y}_s|\mathbf{X};\boldsymbol{\beta})
 \end{aligned}
 \]</span></p>
-<p>con lo cual se concluye que verdaderamente el mecanismo de selección de la muestra puede ser pasado por alto. <span class="citation" data-cites="Sudgen1984">Sudgen y Smith (<a href="#ref-Sudgen1984" role="doc-biblioref">1984</a>)</span> afirman que diseños de muestreo como el aleatorio simple, aleatorio estratificado, proporcional al tamaño, el muestreo a conveniencia o el muestreo balanceado corresponde a casos en donde es posible ignorar el mecanismo de selección. También concluyen que aunque algunas veces los diseños de muestreo pueden ser ignorados en términos de inferencia para <span class="math inline">\(\boldsymbol{\beta}\)</span>, es equivocado pensar que siempre pueden ser ignorados en términos de inferencia predictiva para el total poblacional <span class="math inline">\(T_y\)</span>.</p>
+<p>con lo cual se concluye que verdaderamente el mecanismo de selección de la muestra puede ser pasado por alto. <span class="citation" data-cites="Sudgen1984">Sugden y Smith (<a href="#ref-Sudgen1984" role="doc-biblioref">1984</a>)</span> afirman que diseños de muestreo como el aleatorio simple, aleatorio estratificado, proporcional al tamaño, el muestreo a conveniencia o el muestreo balanceado corresponde a casos en donde es posible ignorar el mecanismo de selección. También concluyen que aunque algunas veces los diseños de muestreo pueden ser ignorados en términos de inferencia para <span class="math inline">\(\boldsymbol{\beta}\)</span>, es equivocado pensar que siempre pueden ser ignorados en términos de inferencia predictiva para el total poblacional <span class="math inline">\(T_y\)</span>.</p>
 <p>Como conclusión, la escogencia del tipo de enfoque (basado en el diseño de muestreo o basado en modelos predictivos) debería estar basada en la adecuación del modelo a la población. Es decir, si el modelo asumido es correcto. Entonces, si se escogió el enfoque basado en modelos predictivos y el modelo no es correcto, entonces las estimaciones estarán sesgadas de la realidad. Por otro lado, las estimaciones que se basan en el diseño de muestreo son robustas e insesgadas a cualquier modelo.</p>
 </section>
 <section id="ejercicios" class="level2" data-number="15.5">
@@ -1321,6 +1331,10 @@ Y_k=\mu+\sqrt{X_k} \varepsilon_k \ \ \ \ \ \ \ \ k=1,\ldots,N.
 </section>
 <section id="referencias" class="level1 unnumbered">
 <h1 class="unnumbered">Referencias</h1>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -1373,7 +1387,7 @@ Hubback, J. A. 1927. <span>«Sampling for Rice Yield in Bihar and Orissa»</span
 Isaki, C. T., y W. A. Fuller. 1982. <span>«Survey design under the regression superpopulation model»</span>. <em>Journal of the American Statistical Association</em> 767: 89-96.
 </div>
 <div id="ref-Kiaer1901" class="csl-entry" role="listitem">
-Kiaer, A. N. 1901. <span>«Sur les méthodes representatives ou typologiques»</span>. <em>Bulletin of the International Statistical Institute</em>.
+Kiær, A. N. 1901. <span>«Sur les méthodes représentatives ou typologiques»</span>. <em>Bulletin of the International Statistical Institute</em>.
 </div>
 <div id="ref-Kyburg87" class="csl-entry" role="listitem">
 Kyburg, H. E. 1987. <span>«the Basic Bayesian Blunder»</span>. <em>The Foundations of Statistical Inference</em>, Reidel, Dordrecht.
@@ -1391,7 +1405,7 @@ Madow, W. G., y L. L. Madow. 1944. <span>«On the Theory of Systematic Sampling�
 Mood, A. M., F. A. Graybill, y D. C. Boes. 1974. <em>Introduction to the Theory of Statistics</em>. 3.ª ed. McGraw Hill.
 </div>
 <div id="ref-Ney34" class="csl-entry" role="listitem">
-Neyman, J. 1934. <span>«On the Two Differents Aspects of the Representative Method: the Method of Stratified Sampling and the Method of Purposive Selection»</span>. <em>Journal of the Royal Statistical Society</em> 97: 558-625.
+Neyman, J. 1934. <span>«On the Two Different Aspects of the Representative Method:, the Method of Stratified Sampling and the Method of Purposive Selection»</span>. <em>Journal of the Royal Statistical Society</em> 97: 558-625.
 </div>
 <div id="ref-Rao05" class="csl-entry" role="listitem">
 Rao, J. N. K. 2005. <span>«Interplay Between Survey Theory and Practice: An Appraisal»</span>. <em>Survey Methodology</em> 31: 117-38.
@@ -1405,11 +1419,11 @@ Royall, R. M. 1971. <span>«Linear Regression models in Finite Population Sampli
 <div id="ref-Royall1976" class="csl-entry" role="listitem">
 Royall, R. M. 1976. <span>«The Linear Least Squares Prediction Approach to Two Stage Sampling»</span>. <em>Journal of the American Statistical Association</em> 71: 657-64.
 </div>
-<div id="ref-SarWri84" class="csl-entry" role="listitem">
-Sarndal, C-E, y R. L. Wright. 1984. <span>«Cosmetic Form of Estimators in Survey Sampling»</span>. <em>Scandinavian Journal of Statistics</em> 11: 164-56.
-</div>
 <div id="ref-Sar" class="csl-entry" role="listitem">
 Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Sampling</em>. Springer, New York.
+</div>
+<div id="ref-SarWri84" class="csl-entry" role="listitem">
+Särndal, C-E, y R. L. Wright. 1984. <span>«Cosmetic Form of Estimators in Survey Sampling»</span>. <em>Scandinavian Journal of Statistics</em> 11: 164-56.
 </div>
 <div id="ref-ScoSmi" class="csl-entry" role="listitem">
 Scott, A. J., y T. M. F. Smith. 1969. <span>«Estimation in Multistage Surveys»</span>. <em>Journal of the American Statistical Association</em> 64: 830-40.
@@ -1421,7 +1435,7 @@ Shao, J. 2003. <em>Mathematical Statistics</em>. Springer.
 Smith, T. M. F. 1976. <span>«The Foundations of Survey Sampling: a Review (with discussion)»</span>. <em>Journal of the Royal Statistical Society</em> 139: 183-204.
 </div>
 <div id="ref-Sudgen1984" class="csl-entry" role="listitem">
-Sudgen, R. A., y T. M. F. Smith. 1984. <span>«Ignorable and Informative Designs in Survey Sampling Inference»</span>. <em>Biometrika</em> 71: 495-506.
+Sugden, R. A., y T. M. F. Smith. 1984. <span>«Ignorable and Informative Designs in Survey Sampling Inference»</span>. <em>Biometrika</em> 71: 495-506.
 </div>
 <div id="ref-Tippett1927" class="csl-entry" role="listitem">
 Tippett, L. C. 1927. <span>«Random Sampling Numbers»</span>. <em>Tracts for Computers</em> XV.
@@ -1998,7 +2012,7 @@ Valliant, R., A. H. Dorfman, y R. M. Royall. 2000. <em>Finite Population Samplin
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -2009,4 +2023,5 @@ Valliant, R., A. H. Dorfman, y R. M. Royall. 2000. <em>Finite Population Samplin
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

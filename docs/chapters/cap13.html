@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>13&nbsp; Muestreo indirecto – Estrategias de Muestreo</title>
+<title>13&nbsp; Muestreo indirecto – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -91,6 +91,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -164,7 +165,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -177,6 +178,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -288,7 +295,10 @@ window.Quarto = {
   <li><a href="#algunas-matrices-especiales" id="toc-algunas-matrices-especiales" class="nav-link" data-scroll-target="#algunas-matrices-especiales"><span class="header-section-number">13.3.2</span> Algunas matrices especiales</a></li>
   </ul></li>
   <li><a href="#ejemplo-léxico-gráfico" id="toc-ejemplo-léxico-gráfico" class="nav-link" data-scroll-target="#ejemplo-léxico-gráfico"><span class="header-section-number">13.4</span> Ejemplo léxico-gráfico</a></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">13.5</span> Ejercicios</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">13.5</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -315,7 +325,7 @@ window.Quarto = {
 
 
 <div class="blockquote">
-<p>En algunas situaciones el estadístico no tiene a su disposición nigún marco de muestreo… Esta ausencia implica que no es posible definir la probabilidad de selección de una muestra, haciendo imposible el cálculo del error de muestreo. En otras situaciones, el estadístico sí tiene acceso a marcos de muestreo que no corresponden directamente a las unidades de muestreo de la población objetivo. <span class="citation" data-cites="Lav2007">Lavallé (<a href="#ref-Lav2007" role="doc-biblioref">2007</a>)</span></p>
+<p>En algunas situaciones el estadístico no tiene a su disposición nigún marco de muestreo… Esta ausencia implica que no es posible definir la probabilidad de selección de una muestra, haciendo imposible el cálculo del error de muestreo. En otras situaciones, el estadístico sí tiene acceso a marcos de muestreo que no corresponden directamente a las unidades de muestreo de la población objetivo. <span class="citation" data-cites="Lav2007">Lavallée (<a href="#ref-Lav2007" role="doc-biblioref">2007</a>)</span></p>
 </div>
 <p>En la práctica los marcos de muestreo de elementos no están siempre disponibles. Sin embargo, en algunas ocasiones, es posible tener acceso a diferentes marcos de lista de elementos que, si bien no hacen parte de la población objetivo, sí están indirectamente relacionados con ésta. Al proceso de selección de muestras bajo las anteriores condiciones se le llama Muestreo Indirecto que está caracterizado porque la producción de estimaciones de simples totales o medias se puede volver una pesadilla para el estadístico. Para resolver este problema se apela al método de ponderación generalizada, caracterizado por su simplicidad y cuyos estimadores comparten la buena propiedad del insesgamiento, incluso bajo muestreo indirecto.</p>
 <p>Para producir estimaciones, en investigaciones de tipo social, económico, etc., generadas mediante una estrategia de muestreo <span class="math inline">\((p(s),\hat{T}(S))\)</span> es imprescindible el acceso, al menos de manera implícita, a un marco de muestreo de elementos de la población objetivo, denotada como <span class="math inline">\(U_B\)</span>. Desafortunadamente, el acceso a tal marco de muestreo es, en la mayoría de ocasiones, difícil de conseguir. Sin embargo, a veces, es posible considerar la disponibilidad de un marco muestral de elementos<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> de alguna otra población <span class="math inline">\(U_A\)</span> vinculados con los elementos de la población objetivo.</p>
@@ -348,7 +358,7 @@ window.Quarto = {
 <li>Sin embargo, el elemento 1 de la población <span class="math inline">\(U_A\)</span> tiene otro hijo por fuera del matrimonio y es notado como el primer elemento de la población <span class="math inline">\(B\)</span>.</li>
 <li>La segunda pareja, dada por los elementos 3 y 4 de la población <span class="math inline">\(U_A\)</span>, tiene sólo un hijo notado como el tercer y último elemento de la población <span class="math inline">\(U_B\)</span></li>
 </ul>
-<p>Usualmente, cuando existe un vínculo entre el elemento <span class="math inline">\(j\)</span>-ésimo de la población <span class="math inline">\(U_A\)</span> y el <span class="math inline">\(i\)</span>-ésimo elemento de la población <span class="math inline">\(U_B\)</span>, <span class="math inline">\(\theta_{ij}^{AB}\)</span> toma el valor uno. Aunque el vínculo puede ser distinto de uno como es discutido en <span class="citation" data-cites="Lav2007">(<a href="#ref-Lav2007" role="doc-biblioref">Lavallé 2007</a>)</span>.</p>
+<p>Usualmente, cuando existe un vínculo entre el elemento <span class="math inline">\(j\)</span>-ésimo de la población <span class="math inline">\(U_A\)</span> y el <span class="math inline">\(i\)</span>-ésimo elemento de la población <span class="math inline">\(U_B\)</span>, <span class="math inline">\(\theta_{ij}^{AB}\)</span> toma el valor uno. Aunque el vínculo puede ser distinto de uno como es discutido en <span class="citation" data-cites="Lav2007">(<a href="#ref-Lav2007" role="doc-biblioref">Lavallée 2007</a>)</span>.</p>
 <p>Usando muestreo indirecto, una muestra <span class="math inline">\(s_A\)</span> de tamaño <span class="math inline">\(n_A\)</span> es seleccionada (realizada) mediante el uso de un diseño muestral <span class="math inline">\(p_A(s_A)\)</span>. Sean <span class="math inline">\(\pi^A_j&gt;0\)</span> <span class="math inline">\(\forall j \in U_A\)</span>la probabilidad de inclusión del <span class="math inline">\(j\)</span>-ésimo elemento. Para cada elemento en la muestra <span class="math inline">\(s_A\)</span> se identifican las unidades en <span class="math inline">\(U_B\)</span> cuya correspondencia con los elementos de la población <span class="math inline">\(U_A\)</span> es no nula, es decir tales que <span class="math inline">\(\theta_{ij}^{AB}&gt;0\)</span>. Sea <span class="math inline">\(s_B\)</span> el conjunto de <span class="math inline">\(n_B\)</span> unidades de la población objetivo que se lograron identificar con ayuda de los elemento pertenecientes a la población <span class="math inline">\(U_A\)</span>. Por tanto</p>
 <p><span class="math display">\[
 s_B=\{i\in B \mid \exists j\in s_A\text{ y }\theta_{ij}^{AB}&gt; 0 \}
@@ -495,7 +505,7 @@ w_i=
 \end{cases}
 \end{aligned}
 \]</span></p>
-<p>De esta forma, se dice que los pesos <span class="math inline">\(w_i\)</span> han sido obtenidos mediante el método de ponderación generalizada tal como se describe en <span class="citation" data-cites="Lav2007">(<a href="#ref-Lav2007" role="doc-biblioref">Lavallé 2007</a>)</span>. En este orden de ideas, y retomando nuestro ejemplo de la población de padres e hijos, si la muestra realizada de padres estuviera dada por</p>
+<p>De esta forma, se dice que los pesos <span class="math inline">\(w_i\)</span> han sido obtenidos mediante el método de ponderación generalizada tal como se describe en <span class="citation" data-cites="Lav2007">(<a href="#ref-Lav2007" role="doc-biblioref">Lavallée 2007</a>)</span>. En este orden de ideas, y retomando nuestro ejemplo de la población de padres e hijos, si la muestra realizada de padres estuviera dada por</p>
 <p>entonces el conjunto de niños identificados por los padres seleccionados estaría dado por</p>
 <p>y las ponderaciones resultantes serían</p>
 <ul>
@@ -706,7 +716,7 @@ z_{N_A} \\
 <section id="ejemplo-léxico-gráfico" class="level2" data-number="13.4">
 <h2 data-number="13.4" class="anchored" data-anchor-id="ejemplo-léxico-gráfico"><span class="header-section-number">13.4</span> Ejemplo léxico-gráfico</h2>
 <!-- index: Muestreo indirecto -->
-<p>Suponga que en el ejemplo de la población de Padres e Hijos, cuya matriz de vínculos está dada por la expresión (14.1.2), y se plantea una investigación acerca de la estimación del total de los Hijos. Para tales efectos, se supone que la matriz de vínculos, siguiendo el consejo de <span class="citation" data-cites="Lav2007">Lavallé (<a href="#ref-Lav2007" role="doc-biblioref">2007</a>)</span> está dada por <span class="math display">\[
+<p>Suponga que en el ejemplo de la población de Padres e Hijos, cuya matriz de vínculos está dada por la expresión (14.1.2), y se plantea una investigación acerca de la estimación del total de los Hijos. Para tales efectos, se supone que la matriz de vínculos, siguiendo el consejo de <span class="citation" data-cites="Lav2007">Lavallée (<a href="#ref-Lav2007" role="doc-biblioref">2007</a>)</span> está dada por <span class="math display">\[
 \Theta_{AB}=
 \left(
   \begin{array}{ccc}
@@ -820,11 +830,15 @@ p_B(s_B)=
 <li><p>Discuta por qué el muestreo adaptativo se puede ver como un caso particular de muestreo indirecto y proponga un estimador que involucre el método de ponderación generalizada.</p></li>
 <li><p>Discuta por qué el muestreo bola de nieve se puede ver como un caso particular de muestreo indirecto y proponga un estimador que involucre el método de ponderación generalizada.</p></li>
 </ol>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-Lav2007" class="csl-entry" role="listitem">
-Lavallé, P. 2007. <em>Indirect Smapling</em>. Springer.
+Lavallée, P. 2007. <em>Indirect Sampling</em>. Springer.
 </div>
 </div>
 </section>
@@ -1398,7 +1412,7 @@ Lavallé, P. 2007. <em>Indirect Smapling</em>. Springer.
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -1409,4 +1423,5 @@ Lavallé, P. 2007. <em>Indirect Smapling</em>. Springer.
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

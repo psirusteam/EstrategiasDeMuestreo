@@ -1281,3 +1281,8 @@ Es notable la ganancia en eficiencia de esta estrategia de muestreo, no hay much
 | 1 | 1099 | 21855 |
 | 2 | 3446 | 1822736 |
 
+::: {.citation-box}
+### Cómo citar este libro  {-}
+
+Gutiérrez, A. (2016). *Estrategias de muestreo: diseño de encuestas y estimación de parámetros*. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.
+:::

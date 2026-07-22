@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Muestreo balanceado – Estrategias de Muestreo</title>
+<title>11&nbsp; Muestreo balanceado – &lt;span style='font-weight: 700'&gt;Estrategias&lt;/span&gt;&lt;br/&gt;&lt;i style='color: #00b7ff'&gt;de Muestreo&lt;/i&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -126,6 +126,7 @@ div.csl-indent {
     "search-label": "Buscar"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script>
 window.MathJax = window.MathJax || {};
 window.MathJax.tex = window.MathJax.tex || {};
@@ -199,7 +200,7 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Estrategias de Muestreo</a> 
+      <a href="../"><span style="font-weight: 700">Estrategias</span><br><i style="color: #00b7ff">de Muestreo</i></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -212,6 +213,12 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/frontmatter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prólogo</span></a>
   </div>
 </li>
@@ -331,7 +338,10 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#algunas-preguntas" id="toc-algunas-preguntas" class="nav-link" data-scroll-target="#algunas-preguntas"><span class="header-section-number">11.3.1</span> Algunas preguntas</a></li>
   </ul></li>
-  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">11.4</span> Ejercicios</a></li>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link" data-scroll-target="#ejercicios"><span class="header-section-number">11.4</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#cómo-citar-este-libro" id="toc-cómo-citar-este-libro" class="nav-link" data-scroll-target="#cómo-citar-este-libro">Cómo citar este libro</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -358,13 +368,13 @@ window.Quarto = {
 
 
 <div class="blockquote">
-<p>El método del cubo propone un procedimiento general que permite la selección de muestras aleatorias balanceadas, con probabilidades de inclusión simples o desiguales en el sentido de que las estimaciones de Horvitz-Thompson son iguales, o casi iguales, al total poblacional de las variables de balanceo. <span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span></p>
+<p>El método del cubo propone un procedimiento general que permite la selección de muestras aleatorias balanceadas, con probabilidades de inclusión simples o desiguales en el sentido de que las estimaciones de Horvitz-Thompson son iguales, o casi iguales, al total poblacional de las variables de balanceo. <span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span></p>
 </div>
 <!-- index: Muestreo balanceado -->
 <p>Comúnmente, el muestreo balanceado ha sido conocido como una técnica de muestreo no probabilístico tal como el muestreo por cuotas<!-- index: Muestreo por cuotas -->, por conveniencia o por juzgamiento. Este tipo de muestreo sugiere la selección de muestras, para las cuales la media muestral de una característica de información auxiliar sea idéntica a la media poblacional de dicha característica de información auxiliar. Es más, si esta característica de información auxiliar está bien correlacionada con la característica de interés, entonces se dice que el muestreo balanceado es óptimo puesto que reproducirá con precisión el total o la media de la característica de interés en la población.</p>
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que la idea de seleccionar muestras balanceadas nació con <span class="citation" data-cites="Ney34">Neyman (<a href="#ref-Ney34" role="doc-biblioref">1934</a>)</span> cuando afirmó que ?el método de la selección a conveniencia consiste en a) dividir la población de distritos en estratos de segundo orden de acuerdo a los valores de <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>, b) seleccionar aleatoriamente de cada estrato un número fijo de distritos. El número de selecciones está determinado por la condición del mantenimiento del promedio ponderado de la característica de interés?. Más adelante, en <span class="citation" data-cites="Yates46">Yates (<a href="#ref-Yates46" role="doc-biblioref">1946</a>)</span> se encuentra el siguiente extracto: ?Se debe seleccionar una muestra aleatoria. Los individuos serán incluidos mediante el mismo proceso aleatorio, el primer miembro será comparado con el primer miembro de la muestra original, el segundo individuo con el segundo de la muestra original y así sucesivamente. Un nuevo miembro será sustituido si mejora el balance?.</p>
-<p>Recientemente, se ha llegado a soluciones parciales para la selección aleatoria (mediante diseños de muestreo propiamente definidos) de muestras balanceadas por medio de métodos propuestos por algunos reconocidos autores de como <span class="citation" data-cites="Ardilly91">Ardilly (<a href="#ref-Ardilly91" role="doc-biblioref">1991</a>)</span> y <span class="citation" data-cites="Deville92">Deville (<a href="#ref-Deville92" role="doc-biblioref">1992</a>)</span>. Por otra parte, autores como y <span class="citation" data-cites="Valliant2000">Valliant et&nbsp;al. (<a href="#ref-Valliant2000" role="doc-biblioref">2000</a>)</span> o <span class="citation" data-cites="RoyalHerson">Royal y Herson (<a href="#ref-RoyalHerson" role="doc-biblioref">1973</a>)</span> han considerado la construcción de estimadores, enmarcados bajo métodos de inferencia basada solamente en modelos poblacionales, y su optimalidad desde el punto de vista del modelo sin tomar en cuenta el diseño muestral y concluyen que un diseño de muestreo puede ser balanceado aunque no necesariamente aleatorio o probabilístico.</p>
-<p>Por otro lado, <span class="citation" data-cites="DevTille2004">Deville y Tillé (<a href="#ref-DevTille2004" role="doc-biblioref">2004</a>)</span> desarrollaron un procedimiento general y riguroso que permite la extracción de muestras probabilísticas balanceadas y la posterior estimación de las cantidades de interés, enmarcados bajo métodos de inferencia basados en el diseño de muestreo. Este procedimiento es conocido como el método del cubo y permite la selección de muestras aleatorias sobre un conjunto de características de información auxiliar (o variables de balanceo), y tiene la agradable propiedad de que el estimador de Horvitz-Thompson reproduce el total poblacional de las variables de balanceo. Más adelante, <span class="citation" data-cites="DT05">Deville y Till’e (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span> adaptaron una aproximación de la varianza para el estimador de Horvitz-Thompson en muestreo balanceado.</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> afirma que la idea de seleccionar muestras balanceadas nació con <span class="citation" data-cites="Ney34">Neyman (<a href="#ref-Ney34" role="doc-biblioref">1934</a>)</span> cuando afirmó que ?el método de la selección a conveniencia consiste en a) dividir la población de distritos en estratos de segundo orden de acuerdo a los valores de <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>, b) seleccionar aleatoriamente de cada estrato un número fijo de distritos. El número de selecciones está determinado por la condición del mantenimiento del promedio ponderado de la característica de interés?. Más adelante, en <span class="citation" data-cites="Yates46">Yates (<a href="#ref-Yates46" role="doc-biblioref">1946</a>)</span> se encuentra el siguiente extracto: ?Se debe seleccionar una muestra aleatoria. Los individuos serán incluidos mediante el mismo proceso aleatorio, el primer miembro será comparado con el primer miembro de la muestra original, el segundo individuo con el segundo de la muestra original y así sucesivamente. Un nuevo miembro será sustituido si mejora el balance?.</p>
+<p>Recientemente, se ha llegado a soluciones parciales para la selección aleatoria (mediante diseños de muestreo propiamente definidos) de muestras balanceadas por medio de métodos propuestos por algunos reconocidos autores de como <span class="citation" data-cites="Ardilly91">Ardilly (<a href="#ref-Ardilly91" role="doc-biblioref">1991</a>)</span> y <span class="citation" data-cites="Deville92">Deville (<a href="#ref-Deville92" role="doc-biblioref">1992</a>)</span>. Por otra parte, autores como y <span class="citation" data-cites="Valliant2000">Valliant et&nbsp;al. (<a href="#ref-Valliant2000" role="doc-biblioref">2000</a>)</span> o <span class="citation" data-cites="RoyalHerson">Royall y Herson (<a href="#ref-RoyalHerson" role="doc-biblioref">1973</a>)</span> han considerado la construcción de estimadores, enmarcados bajo métodos de inferencia basada solamente en modelos poblacionales, y su optimalidad desde el punto de vista del modelo sin tomar en cuenta el diseño muestral y concluyen que un diseño de muestreo puede ser balanceado aunque no necesariamente aleatorio o probabilístico.</p>
+<p>Por otro lado, <span class="citation" data-cites="DevTille2004">Deville y Tillé (<a href="#ref-DevTille2004" role="doc-biblioref">2004</a>)</span> desarrollaron un procedimiento general y riguroso que permite la extracción de muestras probabilísticas balanceadas y la posterior estimación de las cantidades de interés, enmarcados bajo métodos de inferencia basados en el diseño de muestreo. Este procedimiento es conocido como el método del cubo y permite la selección de muestras aleatorias sobre un conjunto de características de información auxiliar (o variables de balanceo), y tiene la agradable propiedad de que el estimador de Horvitz-Thompson reproduce el total poblacional de las variables de balanceo. Más adelante, <span class="citation" data-cites="DT05">Deville y Tillé (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span> adaptaron una aproximación de la varianza para el estimador de Horvitz-Thompson en muestreo balanceado.</p>
 <section id="notación" class="level2" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="notación"><span class="header-section-number">11.1</span> Notación</h2>
 <!-- index: Muestreo balanceado -->
@@ -564,7 +574,7 @@ q_2(t)=\lambda_1^*(t)/(\lambda_1^*(t)+\lambda_2^*(t))
 </section>
 <section id="varianza" class="level3" data-number="11.2.5">
 <h3 data-number="11.2.5" class="anchored" data-anchor-id="varianza"><span class="header-section-number">11.2.5</span> Varianza</h3>
-<p><span class="citation" data-cites="DT05">Deville y Till’e (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span> han propuesto aproximar la varianza suponiendo que la medida de muestreo balanceado se puede asumir como un muestreo condicional de Poisson. Así, <span class="math display">\[
+<p><span class="citation" data-cites="DT05">Deville y Tillé (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span> han propuesto aproximar la varianza suponiendo que la medida de muestreo balanceado se puede asumir como un muestreo condicional de Poisson. Así, <span class="math display">\[
 Var(\hat{t}_{y,\pi})= Var(\hat{E}_{poisson})= \frac{N}{N - p}\sum_{k\in U} \frac{E^2_k}{\pi_k^2}\pi_k(1-\pi_k),
 \]</span></p>
 <p>donde <span class="math inline">\(E_k = y_k - \mathbf{x}'_k\mathbf{B}\)</span>.</p>
@@ -692,13 +702,13 @@ DEFF             NaN        1.0       1.0       1.0</code></pre>
 <section id="algunas-preguntas" class="level3" data-number="11.3.1">
 <h3 data-number="11.3.1" class="anchored" data-anchor-id="algunas-preguntas"><span class="header-section-number">11.3.1</span> Algunas preguntas</h3>
 <!-- index: Muestreo balanceado -->
-<p><span class="citation" data-cites="Til">Till’e (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> responde algunas preguntas que surgen directamente con respecto al funcionamiento de este nuevo método en la práctica:</p>
+<p><span class="citation" data-cites="Til">Tillé (<a href="#ref-Til" role="doc-biblioref">2006</a>)</span> responde algunas preguntas que surgen directamente con respecto al funcionamiento de este nuevo método en la práctica:</p>
 <ul>
 <li><strong>¿Por qué no usar calibración en vez de balanceo?</strong>\ La estratificación es un caso particular del muestreo balanceado, la post-estratificación es un caso particular de la calibración. En estratificación y balanceo, los pesos no son aleatorios. Esto hace que sea una mejor estrategia. La calibración tiene la ventaja de sólo requerir el conocimiento de los totales poblacionales de las variables auxiliares, mientras que en el balanceo se require el conocimiento de los valores de las variables auxiliares para todas las unidades de la población.</li>
 <li><strong>¿Qué tan precisa es la aproximación de la estimación en muestreo balanceado?</strong>\ <span class="citation" data-cites="DevTille2004">Deville y Tillé (<a href="#ref-DevTille2004" role="doc-biblioref">2004</a>)</span> han comprobado que bajo condiciones de regularidad realistas en la vida práctica se tiene que <span class="math display">\[
 \left|\frac{\hat{t}_{x_q,\pi}-t_{xq}}{t_{xq}}\right|&lt;O(p/N)\leq o_p(\sqrt{1/N})
 \]</span> para todo <span class="math inline">\(q=1,\ldots,Q\)</span>.</li>
-<li><strong>¿Cómo estimar la varianza?</strong>\ Mediante una técnica de residual desarrollada en <span class="citation" data-cites="DT05">Deville y Till’e (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span>. Esta técnica es comparable con la técnica usada para calcular la varianza del estimador de calibración y ha sido validada mediante un conjunto de simulaciones.</li>
+<li><strong>¿Cómo estimar la varianza?</strong>\ Mediante una técnica de residual desarrollada en <span class="citation" data-cites="DT05">Deville y Tillé (<a href="#ref-DT05" role="doc-biblioref">2005</a>)</span>. Esta técnica es comparable con la técnica usada para calcular la varianza del estimador de calibración y ha sido validada mediante un conjunto de simulaciones.</li>
 <li><strong>¿Se puede usar balanceo y calibración simultáneamente?</strong>\ Ambas técnicas pueden ser usadas juntas. No hay ninguna contradicción. La mejor estrategia muestral consistiría en usarlas juntas. De hecho la calibración puede arreglar el problema del redondeo después del balanceo. Más aún, se pueden utilizar distintas variables en la calibración de las usadas en el balanceo.</li>
 <li><strong>¿Qué software usar?</strong>\ En SAS-IML, existen dos paquetes (INSEE y University of Neuchâtel), en R el paquete <code>sampling</code> permite usar el método del cubo. Estos softwares están disponibles en internet de manera gratuita.</li>
 </ul>
@@ -732,6 +742,10 @@ DEFF             NaN        1.0       1.0       1.0</code></pre>
 <li>?Utilizar calibración siempre mejora la eficiencia de la estrategia de muestreo balanceado?</li>
 <li>?Utilizar calibración y muestreo balanceado siempre mejora la eficiencia de la estrategia de muestreo?</li>
 </ul>
+<section id="cómo-citar-este-libro" class="level3 unnumbered citation-box">
+<h3 class="unnumbered anchored" data-anchor-id="cómo-citar-este-libro">Cómo citar este libro</h3>
+<p>Gutiérrez, A. (2016). <em>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</em>. Ediciones de la U. Segunda Edición. ISBN: 978-958-762-586-8.</p>
+</section>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -739,25 +753,25 @@ DEFF             NaN        1.0       1.0       1.0</code></pre>
 Ardilly, P. 1991. <span>«Échantillonnage Représentatif Optimum - Probabilités Inégales»</span>. <em>Annales d’économie et de Statistique</em> 23: 91-113.
 </div>
 <div id="ref-Deville92" class="csl-entry" role="listitem">
-Deville, J. C. 1992. <span>«Constrained Samples , Conditional Inference, Weihting: Three Aspects of the Utilisation of Auxiliary Information»</span>. En <em>Proceedings of the Workshop on the Uses of Auxiliary Information in Survey</em>, editado por Sweeden Örebro.
+Deville, J. C. 1992. <span>«Constrained Samples, Conditional Inference, Weighting: Three Aspects of the Utilisation of Auxiliary Information»</span>. En <em>Proceedings of the Workshop on the Uses of Auxiliary Information in Survey</em>, editado por Sweeden Örebro.
 </div>
 <div id="ref-DevTille2004" class="csl-entry" role="listitem">
 Deville, J. C., y Y. Tillé. 2004. <span>«Efficient Balanced Sampling: The Cube Method»</span>. <em>Biometrika</em> 91: 893-912.
 </div>
 <div id="ref-DT05" class="csl-entry" role="listitem">
-Deville, J.-C, y Y. Till’e. 2005. <span>«Variance approximation under balanced sampling»</span>. <em>Journal of Statistical Planning and Inference</em> 128: 411-25.
+Deville, J.-C, y Y. Tillé. 2005. <span>«Variance approximation under balanced sampling»</span>. <em>Journal of Statistical Planning and Inference</em> 128: 411-25.
 </div>
 <div id="ref-Ney34" class="csl-entry" role="listitem">
-Neyman, J. 1934. <span>«On the Two Differents Aspects of the Representative Method: the Method of Stratified Sampling and the Method of Purposive Selection»</span>. <em>Journal of the Royal Statistical Society</em> 97: 558-625.
+Neyman, J. 1934. <span>«On the Two Different Aspects of the Representative Method:, the Method of Stratified Sampling and the Method of Purposive Selection»</span>. <em>Journal of the Royal Statistical Society</em> 97: 558-625.
 </div>
 <div id="ref-RoyalHerson" class="csl-entry" role="listitem">
-Royal, R. M., y J. Herson. 1973. <span>«Robust Estimation in finite Population II: Estratification on a Size Variable»</span>. <em>Journal of the American Statistical Association</em> 68: 891-93.
+Royall, R. M., y J. Herson. 1973. <span>«Robust Estimation in Finite Population II: Stratification on a Size Variable»</span>. <em>Journal of the American Statistical Association</em> 68: 891-93.
 </div>
 <div id="ref-Sar" class="csl-entry" role="listitem">
 Särndal, C. E., B. Swensson, y J. Wretman. 1992. <em>Model Assisted Survey Sampling</em>. Springer, New York.
 </div>
 <div id="ref-Til" class="csl-entry" role="listitem">
-Till’e, Y. 2006. <em>Sampling Algorithms</em>. Springer.
+Tillé, Y. 2006. <em>Sampling Algorithms</em>. Springer.
 </div>
 <div id="ref-Valliant2000" class="csl-entry" role="listitem">
 Valliant, R., A. H. Dorfman, y R. M. Royall. 2000. <em>Finite Population Sampling and Inference</em>. Wiley.
@@ -1330,7 +1344,7 @@ Yates, F. 1946. <span>«A Review of Recent Statistical Developments in Sampling 
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Estrategias de muestreo</p>
+<p>Estrategias de muestreo: diseño de encuestas y estimación de parámetros</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
@@ -1341,4 +1355,5 @@ Yates, F. 1946. <span>«A Review of Recent Statistical Developments in Sampling 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
